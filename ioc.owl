@@ -1,0 +1,781 @@
+Prefix(:=<http://w3id.org/ioc#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://w3id.org/ioc>
+Annotation(<http://purl.org/dc/terms/creator> "Kirner, L., Individualized Production RWTH Aachen"@en)
+Annotation(<http://purl.org/dc/terms/creator> "Oraskari, J., Individualized Production RWTH Aachen")
+Annotation(<http://purl.org/dc/terms/creator> "Wildemann,P., Leonhard Weiss GmbH & Co. KG"@en)
+Annotation(<http://purl.org/dc/terms/description> "The Internet of Construction Ontology (IoC) construction process ontology is intended to represent a comprehensive solution of how processes in the construction industry can be modelled. Due to the iterative nature of creating an ontology, the construction process ontology presented here can at best be considered a working state at the time of publication. Our approach emphasizes the simplest and most comprehensive mapping possible, which is only extended based on insights from practical use when otherwise compelling limitations in usability and applicability arise. Thus, the extension and refinement of the developed construction process ontology strongly depends on the integration of further areas of the construction value chain and the connection of further domain ontologies."@en)
+Annotation(<http://purl.org/dc/terms/issued> "2023-11-03"@en)
+Annotation(<http://purl.org/dc/terms/title> "IOC: Internet of Construction Ontology"@en)
+Annotation(<http://purl.org/vocab/vann/preferredNamespacePrefix> "ioc")
+Annotation(<http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/ioc#")
+Annotation(rdfs:comment "The Internet of Construction Ontology (IoC) is a top-level ontology for describing processes and process-data in the domain of construction. It is a ongoing work as part of the research project “Internet of Construction” that is funded by the Federal Ministry of Education and Research of Germany within the indirective on a joint funding initiative in the field of innovation for production, services and labor of tomorrow (funding number: 02P17D081)."@en)
+Annotation(owl:versionInfo "0.5.1")
+
+Declaration(Class(:Actor))
+Declaration(Class(:AuxiliaryElement))
+Declaration(Class(:Capability))
+Declaration(Class(:CurrentProcessDataState))
+Declaration(Class(:Element))
+Declaration(Class(:Information))
+Declaration(Class(:Location))
+Declaration(Class(:Method))
+Declaration(Class(:Process))
+Declaration(Class(:ProcessData))
+Declaration(Class(:ProcessDataState))
+Declaration(Class(:RawMaterial))
+Declaration(Class(:Resource))
+Declaration(Class(:Schedule))
+Declaration(Class(:Space))
+Declaration(Class(:Status))
+Declaration(Class(<http://www.w3.org/2006/vcard/ns#Vcard>))
+Declaration(Class(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace>))
+Declaration(Class(<https://w3id.org/bot#Element>))
+Declaration(Class(<https://w3id.org/bot#Zone>))
+Declaration(Class(<https://w3id.org/cto#Task>))
+Declaration(Class(<https://w3id.org/cto#TaskMethod>))
+Declaration(Class(<https://w3id.org/omg#Geometry>))
+Declaration(ObjectProperty(:generatedByActor))
+Declaration(ObjectProperty(:hasActor))
+Declaration(ObjectProperty(:hasActorValue))
+Declaration(ObjectProperty(:hasCapability))
+Declaration(ObjectProperty(:hasCapabilityRequirement))
+Declaration(ObjectProperty(:hasCapabilityRequirementValue))
+Declaration(ObjectProperty(:hasCapabilityValue))
+Declaration(ObjectProperty(:hasChild))
+Declaration(ObjectProperty(:hasElement))
+Declaration(ObjectProperty(:hasElementValue))
+Declaration(ObjectProperty(:hasInitialSpace))
+Declaration(ObjectProperty(:hasInitialSpaceValue))
+Declaration(ObjectProperty(:hasInputElement))
+Declaration(ObjectProperty(:hasInputElementValue))
+Declaration(ObjectProperty(:hasInputInformation))
+Declaration(ObjectProperty(:hasInputInformationValue))
+Declaration(ObjectProperty(:hasLocation))
+Declaration(ObjectProperty(:hasLocationValue))
+Declaration(ObjectProperty(:hasMethod))
+Declaration(ObjectProperty(:hasMethodValue))
+Declaration(ObjectProperty(:hasOutputElement))
+Declaration(ObjectProperty(:hasOutputElementValue))
+Declaration(ObjectProperty(:hasOutputInformation))
+Declaration(ObjectProperty(:hasOutputInformationValue))
+Declaration(ObjectProperty(:hasParent))
+Declaration(ObjectProperty(:hasPredecessor))
+Declaration(ObjectProperty(:hasProcessDataState))
+Declaration(ObjectProperty(:hasResource))
+Declaration(ObjectProperty(:hasResourceValue))
+Declaration(ObjectProperty(:hasSchedule))
+Declaration(ObjectProperty(:hasScheduleValue))
+Declaration(ObjectProperty(:hasStatus))
+Declaration(ObjectProperty(:hasStatusValue))
+Declaration(ObjectProperty(:hasSuccessor))
+Declaration(ObjectProperty(:hasTargetSpace))
+Declaration(ObjectProperty(:hasTargetSpaceValue))
+Declaration(ObjectProperty(:hasValue))
+Declaration(ObjectProperty(:isContainedIn))
+Declaration(ObjectProperty(:isContainedInValue))
+Declaration(ObjectProperty(<https://w3id.org/omg#hasGeometry>))
+Declaration(DataProperty(:hasDuration))
+Declaration(DataProperty(:hasInternalProcessMark))
+Declaration(DataProperty(:isCancelled))
+Declaration(DataProperty(:isFinished))
+Declaration(DataProperty(:isPaused))
+Declaration(DataProperty(:isReady))
+Declaration(DataProperty(:isStarted))
+Declaration(DataProperty(:isvalid))
+Declaration(DataProperty(<http://www.w3.org/ns/prov#endedAtTime>))
+Declaration(DataProperty(<http://www.w3.org/ns/prov#generatedAtTime>))
+Declaration(DataProperty(<http://www.w3.org/ns/prov#startedAtTime>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/issued>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://purl.org/vocab/vann/preferredNamespacePrefix>))
+Declaration(AnnotationProperty(<http://purl.org/vocab/vann/preferredNamespaceUri>))
+Declaration(AnnotationProperty(<http://schema.org/domainIncludes>))
+Declaration(AnnotationProperty(<http://schema.org/rangeIncludes>))
+Declaration(AnnotationProperty(<http://www.w3.org/2006/vcard/ns#family-name>))
+Declaration(AnnotationProperty(<http://www.w3.org/2006/vcard/ns#fn>))
+Declaration(AnnotationProperty(<http://www.w3.org/2006/vcard/ns#given-name>))
+Declaration(AnnotationProperty(<http://www.w3.org/2006/vcard/ns#hasOrganizationName>))
+Declaration(AnnotationProperty(<http://www.w3.org/2006/vcard/ns#hasURL>))
+Declaration(AnnotationProperty(<http://www.w3.org/2006/vcard/ns#organization-name>))
+Declaration(AnnotationProperty(<https://schema.org/name>))
+Declaration(Datatype(xsd:dateTime))
+Declaration(Datatype(xsd:duration))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :generatedByActor (generatedByActor)
+
+AnnotationAssertion(rdfs:comment :generatedByActor "The ioc:Actor that generated the information branch")
+AnnotationAssertion(rdfs:isDefinedBy :generatedByActor <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :generatedByActor "generatedByActor")
+InverseFunctionalObjectProperty(:generatedByActor)
+ObjectPropertyDomain(:generatedByActor :ProcessDataState)
+ObjectPropertyRange(:generatedByActor :Actor)
+
+# Object Property: :hasActor (hasActor)
+
+AnnotationAssertion(rdfs:comment :hasActor "A responsible person or organization can be assigned to a process with the object property \"hasActor\" ")
+AnnotationAssertion(rdfs:isDefinedBy :hasActor <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasActor "hasActor")
+SubObjectPropertyOf(:hasActor :hasProcessDataState)
+AsymmetricObjectProperty(:hasActor)
+ObjectPropertyDomain(:hasActor :Process)
+ObjectPropertyRange(:hasActor :ProcessDataState)
+DisjointObjectProperties(:hasActor :hasCapabilityRequirement :hasInitialSpace :hasInputElement :hasInputInformation :hasMethod :hasOutputElement :hasOutputInformation :hasResource :hasSchedule :hasStatus :hasTargetSpace)
+
+# Object Property: :hasActorValue (hasActorValue)
+
+AnnotationAssertion(rdfs:comment :hasActorValue "object property to link a specific version of an actor links to the process actor.")
+AnnotationAssertion(rdfs:isDefinedBy :hasActorValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasActorValue "hasActorValue")
+SubObjectPropertyOf(:hasActorValue :hasValue)
+FunctionalObjectProperty(:hasActorValue)
+ObjectPropertyDomain(:hasActorValue :ProcessDataState)
+ObjectPropertyRange(:hasActorValue :Actor)
+DisjointObjectProperties(:hasActorValue :hasCapabilityRequirementValue :hasCapabilityValue :hasElementValue :hasInitialSpaceValue :hasInputElementValue :hasInputInformationValue :hasLocationValue :hasMethodValue :hasOutputElementValue :hasOutputInformationValue :hasResourceValue :hasScheduleValue :hasStatusValue :hasTargetSpaceValue :isContainedInValue)
+
+# Object Property: :hasCapability (hasCapability)
+
+AnnotationAssertion(rdfs:comment :hasCapability "The version of a capability a resource inherits")
+AnnotationAssertion(rdfs:isDefinedBy :hasCapability <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasCapability "hasCapability")
+AsymmetricObjectProperty(:hasCapability)
+ObjectPropertyDomain(:hasCapability :Resource)
+ObjectPropertyRange(:hasCapability :ProcessDataState)
+
+# Object Property: :hasCapabilityRequirement (hasCapabilityRequirement)
+
+AnnotationAssertion(rdfs:comment :hasCapabilityRequirement "Property for adding a version of a capability requirement to a process")
+AnnotationAssertion(rdfs:isDefinedBy :hasCapabilityRequirement <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasCapabilityRequirement "hasCapabilityRequirement")
+SubObjectPropertyOf(:hasCapabilityRequirement :hasProcessDataState)
+AsymmetricObjectProperty(:hasCapabilityRequirement)
+ObjectPropertyDomain(:hasCapabilityRequirement :Process)
+ObjectPropertyRange(:hasCapabilityRequirement :ProcessDataState)
+
+# Object Property: :hasCapabilityRequirementValue (hasCapabilityRequirementValue)
+
+AnnotationAssertion(rdfs:comment :hasCapabilityRequirementValue "object property to link a specific version of an capability requirement  to one or more capabilities describring a process requirement")
+AnnotationAssertion(rdfs:isDefinedBy :hasCapabilityRequirementValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasCapabilityRequirementValue "hasCapabilityRequirementValue")
+SubObjectPropertyOf(:hasCapabilityRequirementValue :hasValue)
+ObjectPropertyDomain(:hasCapabilityRequirementValue :ProcessDataState)
+ObjectPropertyRange(:hasCapabilityRequirementValue :Capability)
+
+# Object Property: :hasCapabilityValue (hasCapabilityValue)
+
+AnnotationAssertion(rdfs:comment :hasCapabilityValue "object property to link a specific version of an capability of a resource  to one or more capabilities")
+AnnotationAssertion(rdfs:isDefinedBy :hasCapabilityValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasCapabilityValue "hasCapabilityValue")
+SubObjectPropertyOf(:hasCapabilityValue :hasValue)
+ObjectPropertyDomain(:hasCapabilityValue :ProcessDataState)
+ObjectPropertyRange(:hasCapabilityValue :Capability)
+
+# Object Property: :hasChild (hasChild)
+
+AnnotationAssertion(rdfs:comment :hasChild "Child process of a process. A process can have a undeifned number of children")
+AnnotationAssertion(rdfs:isDefinedBy :hasChild <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasChild "hasChild")
+InverseObjectProperties(:hasChild :hasParent)
+InverseFunctionalObjectProperty(:hasChild)
+AsymmetricObjectProperty(:hasChild)
+TransitiveObjectProperty(:hasChild)
+ObjectPropertyDomain(:hasChild :Process)
+ObjectPropertyRange(:hasChild :Process)
+
+# Object Property: :hasElement (hasElement)
+
+AnnotationAssertion(rdfs:comment :hasElement "Points to a version of an element grouping")
+AnnotationAssertion(rdfs:isDefinedBy :hasElement <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasElement "hasElement")
+AsymmetricObjectProperty(:hasElement)
+ObjectPropertyDomain(:hasElement :Element)
+ObjectPropertyRange(:hasElement :ProcessDataState)
+
+# Object Property: :hasElementValue (hasElementValue)
+
+AnnotationAssertion(rdfs:comment :hasElementValue "object property to link a specific version of an Element  to one or more elements")
+AnnotationAssertion(rdfs:isDefinedBy :hasElementValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasElementValue "hasElementValue")
+SubObjectPropertyOf(:hasElementValue :hasValue)
+ObjectPropertyDomain(:hasElementValue :ProcessDataState)
+ObjectPropertyRange(:hasElementValue :Element)
+
+# Object Property: :hasInitialSpace (hasInitialSpace)
+
+AnnotationAssertion(rdfs:comment :hasInitialSpace "Property to add a version of a initial space, which defines the input of a location or space which the process requires")
+AnnotationAssertion(rdfs:isDefinedBy :hasInitialSpace <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInitialSpace "hasInitialSpace")
+SubObjectPropertyOf(:hasInitialSpace :hasProcessDataState)
+AsymmetricObjectProperty(:hasInitialSpace)
+ObjectPropertyDomain(:hasInitialSpace :Process)
+ObjectPropertyRange(:hasInitialSpace :ProcessDataState)
+
+# Object Property: :hasInitialSpaceValue (hasInitialSpaceValue)
+
+AnnotationAssertion(rdfs:comment :hasInitialSpaceValue "object property to link a specific version of an inistial space to the class describing its exact value")
+AnnotationAssertion(rdfs:isDefinedBy :hasInitialSpaceValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInitialSpaceValue "hasInitialSpaceValue")
+SubObjectPropertyOf(:hasInitialSpaceValue :hasValue)
+FunctionalObjectProperty(:hasInitialSpaceValue)
+ObjectPropertyDomain(:hasInitialSpaceValue :ProcessDataState)
+ObjectPropertyRange(:hasInitialSpaceValue :Space)
+
+# Object Property: :hasInputElement (hasInputElement)
+
+AnnotationAssertion(rdfs:comment :hasInputElement "Version of an element that the process transforms")
+AnnotationAssertion(rdfs:isDefinedBy :hasInputElement <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInputElement "hasInputElement")
+SubObjectPropertyOf(:hasInputElement :hasProcessDataState)
+AsymmetricObjectProperty(:hasInputElement)
+ObjectPropertyDomain(:hasInputElement :Process)
+ObjectPropertyRange(:hasInputElement :ProcessDataState)
+
+# Object Property: :hasInputElementValue (hasInputElementValue)
+
+AnnotationAssertion(rdfs:comment :hasInputElementValue "Property for linking a version of an element that the process transforms to the speciffic element classes.")
+AnnotationAssertion(rdfs:isDefinedBy :hasInputElementValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInputElementValue "hasInputElementValue")
+SubObjectPropertyOf(:hasInputElementValue :hasValue)
+ObjectPropertyDomain(:hasInputElementValue :ProcessDataState)
+ObjectPropertyRange(:hasInputElementValue :Element)
+
+# Object Property: :hasInputInformation (hasInputInformation)
+
+AnnotationAssertion(rdfs:comment :hasInputInformation "Property for connecting a version of a piece of information or a infromation container to a process")
+AnnotationAssertion(rdfs:isDefinedBy :hasInputInformation <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInputInformation "hasInputInformation")
+SubObjectPropertyOf(:hasInputInformation :hasProcessDataState)
+AsymmetricObjectProperty(:hasInputInformation)
+ObjectPropertyDomain(:hasInputInformation :Process)
+ObjectPropertyRange(:hasInputInformation :ProcessDataState)
+
+# Object Property: :hasInputInformationValue (hasInputInformationValue)
+
+AnnotationAssertion(rdfs:comment :hasInputInformationValue "object property to link a specific version of an piece of input information to one or more pieces of information")
+AnnotationAssertion(rdfs:isDefinedBy :hasInputInformationValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInputInformationValue "hasInputInformationValue")
+SubObjectPropertyOf(:hasInputInformationValue :hasValue)
+ObjectPropertyDomain(:hasInputInformationValue :ProcessDataState)
+ObjectPropertyRange(:hasInputInformationValue :Information)
+
+# Object Property: :hasLocation (hasLocation)
+
+AnnotationAssertion(rdfs:comment :hasLocation "Property to connect a element, resource or spatial zone.")
+AnnotationAssertion(rdfs:isDefinedBy :hasLocation <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasLocation "hasLocation")
+FunctionalObjectProperty(:hasLocation)
+AsymmetricObjectProperty(:hasLocation)
+ObjectPropertyDomain(:hasLocation ObjectUnionOf(:Element :Resource <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <https://w3id.org/bot#Zone>))
+ObjectPropertyRange(:hasLocation :ProcessDataState)
+
+# Object Property: :hasLocationValue (hasLocationValue)
+
+AnnotationAssertion(rdfs:comment :hasLocationValue "object property to link a specific version of a location  to one or more location instances")
+AnnotationAssertion(rdfs:isDefinedBy :hasLocationValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasLocationValue "hasLocationValue")
+SubObjectPropertyOf(:hasLocationValue :hasValue)
+ObjectPropertyDomain(:hasLocationValue :ProcessDataState)
+ObjectPropertyRange(:hasLocationValue :Location)
+
+# Object Property: :hasMethod (hasMethod)
+
+AnnotationAssertion(rdfs:comment :hasMethod "Property for connecting a version of a Method. Method can describe an uninstanciated process in general, like \"milling\" or \"fixing\"")
+AnnotationAssertion(rdfs:isDefinedBy :hasMethod <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasMethod "hasMethod")
+SubObjectPropertyOf(:hasMethod :hasProcessDataState)
+AsymmetricObjectProperty(:hasMethod)
+ObjectPropertyDomain(:hasMethod :Process)
+ObjectPropertyRange(:hasMethod :ProcessDataState)
+
+# Object Property: :hasMethodValue (hasMethodValue)
+
+AnnotationAssertion(rdfs:comment :hasMethodValue "object property to link a specific version of a method  to one or more instanciated Methods")
+AnnotationAssertion(rdfs:isDefinedBy :hasMethodValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasMethodValue "hasMethodValue")
+SubObjectPropertyOf(:hasMethodValue :hasValue)
+ObjectPropertyDomain(:hasMethodValue :ProcessDataState)
+ObjectPropertyRange(:hasMethodValue :Method)
+
+# Object Property: :hasOutputElement (hasOutputElement)
+
+AnnotationAssertion(rdfs:comment :hasOutputElement "Version of an element that the process has transformed")
+AnnotationAssertion(rdfs:isDefinedBy :hasOutputElement <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasOutputElement "hasOutputElement")
+SubObjectPropertyOf(:hasOutputElement :hasProcessDataState)
+AsymmetricObjectProperty(:hasOutputElement)
+ObjectPropertyDomain(:hasOutputElement :Process)
+ObjectPropertyRange(:hasOutputElement :ProcessDataState)
+
+# Object Property: :hasOutputElementValue (hasOutputElementValue)
+
+AnnotationAssertion(rdfs:comment :hasOutputElementValue "Property for linking a version of an element that the process has transformed to the speciffic element classes.")
+AnnotationAssertion(rdfs:isDefinedBy :hasOutputElementValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasOutputElementValue "hasOutputElementValue")
+SubObjectPropertyOf(:hasOutputElementValue :hasValue)
+ObjectPropertyDomain(:hasOutputElementValue :ProcessDataState)
+ObjectPropertyRange(:hasOutputElementValue :Element)
+
+# Object Property: :hasOutputInformation (hasOutputInformation)
+
+AnnotationAssertion(rdfs:comment :hasOutputInformation "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process")
+AnnotationAssertion(rdfs:isDefinedBy :hasOutputInformation <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasOutputInformation "hasOutputInformation")
+SubObjectPropertyOf(:hasOutputInformation :hasProcessDataState)
+AsymmetricObjectProperty(:hasOutputInformation)
+ObjectPropertyDomain(:hasOutputInformation :Process)
+ObjectPropertyRange(:hasOutputInformation :ProcessDataState)
+
+# Object Property: :hasOutputInformationValue (hasOutputInformationValue)
+
+AnnotationAssertion(rdfs:comment :hasOutputInformationValue "object property to link a specific version of an piece of output information to one or more pieces of information")
+AnnotationAssertion(rdfs:isDefinedBy :hasOutputInformationValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasOutputInformationValue "hasOutputInformationValue")
+SubObjectPropertyOf(:hasOutputInformationValue :hasValue)
+ObjectPropertyDomain(:hasOutputInformationValue :ProcessDataState)
+ObjectPropertyRange(:hasOutputInformationValue :Information)
+
+# Object Property: :hasParent (hasParent)
+
+AnnotationAssertion(rdfs:comment :hasParent "Parent of a Process. A Process can at most have one parent.")
+AnnotationAssertion(rdfs:isDefinedBy :hasParent <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasParent "hasParent")
+FunctionalObjectProperty(:hasParent)
+AsymmetricObjectProperty(:hasParent)
+TransitiveObjectProperty(:hasParent)
+ObjectPropertyDomain(:hasParent :Process)
+ObjectPropertyRange(:hasParent :Process)
+
+# Object Property: :hasPredecessor (hasPredecessor)
+
+AnnotationAssertion(rdfs:comment :hasPredecessor "Logical Predecessor of a process. Must be finished for the process to be ready.")
+AnnotationAssertion(rdfs:isDefinedBy :hasPredecessor <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasPredecessor "hasPredecessor")
+InverseObjectProperties(:hasPredecessor :hasSuccessor)
+AsymmetricObjectProperty(:hasPredecessor)
+TransitiveObjectProperty(:hasPredecessor)
+ObjectPropertyDomain(:hasPredecessor :Process)
+ObjectPropertyRange(:hasPredecessor :Process)
+
+# Object Property: :hasProcessDataState (hasProcessDataState)
+
+AnnotationAssertion(rdfs:comment :hasProcessDataState "Generalized property to connect a process to a dynamic, version of its process data.")
+AnnotationAssertion(rdfs:isDefinedBy :hasProcessDataState <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasProcessDataState "hasProcessDataState")
+AsymmetricObjectProperty(:hasProcessDataState)
+ObjectPropertyDomain(:hasProcessDataState :Process)
+ObjectPropertyRange(:hasProcessDataState :ProcessDataState)
+
+# Object Property: :hasResource (hasResource)
+
+AnnotationAssertion(rdfs:comment :hasResource "Object property to link a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process.")
+AnnotationAssertion(rdfs:isDefinedBy :hasResource <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasResource "hasResource")
+SubObjectPropertyOf(:hasResource :hasProcessDataState)
+AsymmetricObjectProperty(:hasResource)
+ObjectPropertyDomain(:hasResource :Process)
+ObjectPropertyRange(:hasResource :ProcessDataState)
+
+# Object Property: :hasResourceValue (hasResourceValue)
+
+AnnotationAssertion(rdfs:comment :hasResourceValue "Object property to link a  version of a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process, to instanciated class")
+AnnotationAssertion(rdfs:isDefinedBy :hasResourceValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasResourceValue "hasResourceValue")
+SubObjectPropertyOf(:hasResourceValue :hasValue)
+ObjectPropertyDomain(:hasResourceValue :ProcessDataState)
+ObjectPropertyRange(:hasResourceValue :Resource)
+
+# Object Property: :hasSchedule (hasSchedule)
+
+AnnotationAssertion(rdfs:comment :hasSchedule "Object property to connect  a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process.")
+AnnotationAssertion(rdfs:isDefinedBy :hasSchedule <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasSchedule "hasSchedule")
+SubObjectPropertyOf(:hasSchedule :hasProcessDataState)
+AsymmetricObjectProperty(:hasSchedule)
+ObjectPropertyDomain(:hasSchedule :Process)
+ObjectPropertyRange(:hasSchedule :ProcessDataState)
+
+# Object Property: :hasScheduleValue (hasScheduleValue)
+
+AnnotationAssertion(rdfs:comment :hasScheduleValue "Object property to connect a version of a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific proces to a instanciated Schedule")
+AnnotationAssertion(rdfs:isDefinedBy :hasScheduleValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasScheduleValue "hasScheduleValue")
+SubObjectPropertyOf(:hasScheduleValue :hasValue)
+FunctionalObjectProperty(:hasScheduleValue)
+ObjectPropertyDomain(:hasScheduleValue :ProcessDataState)
+ObjectPropertyRange(:hasScheduleValue :Schedule)
+
+# Object Property: :hasStatus (hasStatus)
+
+AnnotationAssertion(rdfs:comment :hasStatus "Object property to connect a version of a condition or state of the process. It is descirbed with a combination of bools.")
+AnnotationAssertion(rdfs:isDefinedBy :hasStatus <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasStatus "hasStatus")
+SubObjectPropertyOf(:hasStatus :hasProcessDataState)
+AsymmetricObjectProperty(:hasStatus)
+ObjectPropertyDomain(:hasStatus :Process)
+ObjectPropertyRange(:hasStatus :ProcessDataState)
+
+# Object Property: :hasStatusValue (hasStatusValue)
+
+AnnotationAssertion(rdfs:comment :hasStatusValue "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools.")
+AnnotationAssertion(rdfs:isDefinedBy :hasStatusValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasStatusValue "hasStatusValue")
+SubObjectPropertyOf(:hasStatusValue :hasValue)
+FunctionalObjectProperty(:hasStatusValue)
+ObjectPropertyDomain(:hasStatusValue :ProcessDataState)
+ObjectPropertyRange(:hasStatusValue :Status)
+
+# Object Property: :hasSuccessor (hasSuccessor)
+
+AnnotationAssertion(rdfs:comment :hasSuccessor "Logical Successor of a process. The process must be  finished for the sucessor to be ready.")
+AnnotationAssertion(rdfs:isDefinedBy :hasSuccessor <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasSuccessor "hasSuccessor")
+AsymmetricObjectProperty(:hasSuccessor)
+TransitiveObjectProperty(:hasSuccessor)
+ObjectPropertyDomain(:hasSuccessor :Process)
+ObjectPropertyRange(:hasSuccessor :Process)
+
+# Object Property: :hasTargetSpace (hasTargetSpace)
+
+AnnotationAssertion(rdfs:comment :hasTargetSpace "Property to add a version of an output space, thus defining the transformed location or space of the process")
+AnnotationAssertion(rdfs:isDefinedBy :hasTargetSpace <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasTargetSpace "hasTargetSpace")
+SubObjectPropertyOf(:hasTargetSpace :hasProcessDataState)
+AsymmetricObjectProperty(:hasTargetSpace)
+ObjectPropertyDomain(:hasTargetSpace :Process)
+ObjectPropertyRange(:hasTargetSpace :ProcessDataState)
+
+# Object Property: :hasTargetSpaceValue (hasTargetSpaceValue)
+
+AnnotationAssertion(rdfs:comment :hasTargetSpaceValue "Property to add a isingle instance to a version of an output space, thus defining the transformed location or space of the process")
+AnnotationAssertion(rdfs:isDefinedBy :hasTargetSpaceValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasTargetSpaceValue "hasTargetSpaceValue")
+SubObjectPropertyOf(:hasTargetSpaceValue :hasValue)
+FunctionalObjectProperty(:hasTargetSpaceValue)
+ObjectPropertyDomain(:hasTargetSpaceValue :ProcessDataState)
+ObjectPropertyRange(:hasTargetSpaceValue :Space)
+
+# Object Property: :hasValue (hasValue)
+
+AnnotationAssertion(rdfs:comment :hasValue "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData.")
+AnnotationAssertion(rdfs:isDefinedBy :hasValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasValue "hasValue")
+FunctionalObjectProperty(:hasValue)
+ObjectPropertyDomain(:hasValue :ProcessDataState)
+ObjectPropertyRange(:hasValue :ProcessData)
+
+# Object Property: :isContainedIn (isContainedIn)
+
+AnnotationAssertion(rdfs:comment :isContainedIn "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones")
+AnnotationAssertion(rdfs:isDefinedBy :isContainedIn <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isContainedIn "isContainedIn")
+InverseFunctionalObjectProperty(:isContainedIn)
+AsymmetricObjectProperty(:isContainedIn)
+ObjectPropertyDomain(:isContainedIn ObjectUnionOf(:Location :Resource <https://w3id.org/bot#Element>))
+ObjectPropertyRange(:isContainedIn :ProcessDataState)
+
+# Object Property: :isContainedInValue (isContainedInValue)
+
+AnnotationAssertion(rdfs:comment :isContainedInValue "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones from version to instance")
+AnnotationAssertion(rdfs:isDefinedBy :isContainedInValue <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isContainedInValue "isContainedInValue")
+SubObjectPropertyOf(:isContainedInValue :hasValue)
+ObjectPropertyDomain(:isContainedInValue :ProcessDataState)
+ObjectPropertyRange(:isContainedInValue ObjectUnionOf(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <https://w3id.org/bot#Zone>))
+
+# Object Property: <https://w3id.org/omg#hasGeometry> (hasGeometry)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/omg#hasGeometry> "Property for connecting geometries to elements, resources or spatial zones")
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/omg#hasGeometry> <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label <https://w3id.org/omg#hasGeometry> "hasGeometry")
+InverseFunctionalObjectProperty(<https://w3id.org/omg#hasGeometry>)
+ObjectPropertyDomain(<https://w3id.org/omg#hasGeometry> ObjectUnionOf(:Element :Resource <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <https://w3id.org/bot#Zone>))
+ObjectPropertyRange(<https://w3id.org/omg#hasGeometry> <https://w3id.org/omg#Geometry>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasDuration (hasDuration)
+
+AnnotationAssertion(rdfs:comment :hasDuration "Duration of a Process Schedule")
+AnnotationAssertion(rdfs:isDefinedBy :hasDuration <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasDuration <http://w3id.org/hasDuration>)
+FunctionalDataProperty(:hasDuration)
+DataPropertyDomain(:hasDuration :Schedule)
+DataPropertyRange(:hasDuration rdfs:Literal)
+
+# Data Property: :hasInternalProcessMark (hasInternalProcessMark)
+
+AnnotationAssertion(rdfs:comment :hasInternalProcessMark "A optional, internal process mark that can be used to add custom functionality to the process model")
+AnnotationAssertion(rdfs:isDefinedBy :hasInternalProcessMark <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :hasInternalProcessMark "hasInternalProcessMark")
+FunctionalDataProperty(:hasInternalProcessMark)
+DataPropertyDomain(:hasInternalProcessMark :Process)
+DataPropertyRange(:hasInternalProcessMark xsd:string)
+
+# Data Property: :isCancelled (isCancelled)
+
+AnnotationAssertion(rdfs:comment :isCancelled "A boolean that describes if the process was canceled.")
+AnnotationAssertion(rdfs:isDefinedBy :isCancelled <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isCancelled "isCancelled")
+FunctionalDataProperty(:isCancelled)
+DataPropertyDomain(:isCancelled :Status)
+DataPropertyRange(:isCancelled xsd:boolean)
+
+# Data Property: :isFinished (isFinished)
+
+AnnotationAssertion(rdfs:comment :isFinished "A boolean that describes if the process was finished.")
+AnnotationAssertion(rdfs:isDefinedBy :isFinished <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isFinished "isFinished")
+FunctionalDataProperty(:isFinished)
+DataPropertyDomain(:isFinished :Status)
+DataPropertyRange(:isFinished xsd:boolean)
+
+# Data Property: :isPaused (isPaused)
+
+AnnotationAssertion(rdfs:comment :isPaused "A boolean that describes if the process is canceled.")
+AnnotationAssertion(rdfs:isDefinedBy :isPaused <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isPaused "isPaused")
+FunctionalDataProperty(:isPaused)
+DataPropertyDomain(:isPaused :Status)
+DataPropertyRange(:isPaused xsd:boolean)
+
+# Data Property: :isReady (isReady)
+
+AnnotationAssertion(rdfs:comment :isReady "A boolean that describes if the process is ready to start.")
+AnnotationAssertion(rdfs:isDefinedBy :isReady <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isReady "isReady")
+FunctionalDataProperty(:isReady)
+DataPropertyDomain(:isReady :Status)
+DataPropertyRange(:isReady xsd:boolean)
+
+# Data Property: :isStarted (isStarted)
+
+AnnotationAssertion(rdfs:comment :isStarted "A boolean that describes if the process was started.")
+AnnotationAssertion(rdfs:isDefinedBy :isStarted <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isStarted "isStarted")
+FunctionalDataProperty(:isStarted)
+DataPropertyDomain(:isStarted :Status)
+DataPropertyRange(:isStarted xsd:boolean)
+
+# Data Property: :isvalid (isvalid)
+
+AnnotationAssertion(rdfs:comment :isvalid "A boolean that describes if a ProcessDataState os considered valid trhough extra validation. WIP")
+AnnotationAssertion(rdfs:isDefinedBy :isvalid <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :isvalid "isvalid")
+FunctionalDataProperty(:isvalid)
+DataPropertyDomain(:isvalid :ProcessDataState)
+DataPropertyRange(:isvalid xsd:boolean)
+
+# Data Property: <http://www.w3.org/ns/prov#endedAtTime> (endedAtTime)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/ns/prov#endedAtTime> "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.")
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/ns/prov#>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/prov#endedAtTime> "endedAtTime")
+FunctionalDataProperty(<http://www.w3.org/ns/prov#endedAtTime>)
+DataPropertyDomain(<http://www.w3.org/ns/prov#endedAtTime> :Schedule)
+DataPropertyRange(<http://www.w3.org/ns/prov#endedAtTime> xsd:dateTime)
+
+# Data Property: <http://www.w3.org/ns/prov#generatedAtTime> (generatedAtTime)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/ns/prov#generatedAtTime> "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.")
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/ns/prov#>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/prov#generatedAtTime> "generatedAtTime")
+FunctionalDataProperty(<http://www.w3.org/ns/prov#generatedAtTime>)
+DataPropertyDomain(<http://www.w3.org/ns/prov#generatedAtTime> :ProcessDataState)
+DataPropertyRange(<http://www.w3.org/ns/prov#generatedAtTime> xsd:dateTime)
+
+# Data Property: <http://www.w3.org/ns/prov#startedAtTime> (startedAtTime)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/ns/prov#startedAtTime> "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.")
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/ns/prov#>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/ns/prov#startedAtTime> "startedAtTime")
+FunctionalDataProperty(<http://www.w3.org/ns/prov#startedAtTime>)
+DataPropertyDomain(<http://www.w3.org/ns/prov#startedAtTime> :Schedule)
+DataPropertyRange(<http://www.w3.org/ns/prov#startedAtTime> xsd:dateTime)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Actor (Actor)
+
+AnnotationAssertion(rdfs:comment :Actor "A responsible person or organization. can be assigned to a process")
+AnnotationAssertion(rdfs:isDefinedBy :Actor <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Actor "Actor")
+SubClassOf(:Actor :ProcessData)
+
+# Class: :AuxiliaryElement (AuxiliaryElement)
+
+AnnotationAssertion(rdfs:comment :AuxiliaryElement "A secondary element that is not part of the realized building afterwards.")
+AnnotationAssertion(rdfs:isDefinedBy :AuxiliaryElement <http://w3id.org/ioc>)
+AnnotationAssertion(rdfs:label :AuxiliaryElement "AuxiliaryElement")
+SubClassOf(:AuxiliaryElement :Element)
+
+# Class: :Capability (Capability)
+
+AnnotationAssertion(rdfs:comment :Capability "Refers to the ability or capacity of an individual, organization, system, or entity to perform a specific action, task, or function effectively.")
+AnnotationAssertion(rdfs:isDefinedBy :Capability <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Capability "Capability")
+SubClassOf(:Capability :ProcessData)
+
+# Class: :CurrentProcessDataState (CurrentProcessDataState)
+
+AnnotationAssertion(rdfs:comment :CurrentProcessDataState "The current Intermediate Node which helps to add metadata to the object property connecting the Process to its sepcific ProcessData. Functionality adapted form opm ontology.")
+AnnotationAssertion(rdfs:isDefinedBy :CurrentProcessDataState <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :CurrentProcessDataState "CurrentProcessDataState")
+SubClassOf(:CurrentProcessDataState :ProcessDataState)
+
+# Class: :Element (Element)
+
+AnnotationAssertion(rdfs:comment :Element "A element or a group of elements.")
+AnnotationAssertion(rdfs:isDefinedBy :Element <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Element "Element")
+SubClassOf(:Element :ProcessData)
+
+# Class: :Information (Information)
+
+AnnotationAssertion(rdfs:comment :Information <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:comment :Information "Structured Process Data. This class is meant to be a loose connection to other files and information containers.")
+AnnotationAssertion(rdfs:label :Information "Information")
+SubClassOf(:Information :ProcessData)
+
+# Class: :Location (Location)
+
+AnnotationAssertion(rdfs:comment :Location "A location in the sense of a describable,precise point in space")
+AnnotationAssertion(rdfs:isDefinedBy :Location <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Location "Location")
+SubClassOf(:Location :Space)
+
+# Class: :Method (Method)
+
+AnnotationAssertion(rdfs:comment :Method "The Method that is used to perform the process described. Used as Interface to mor specific domain ontologies.")
+AnnotationAssertion(rdfs:isDefinedBy :Method <http://w3id.org/ioc>)
+AnnotationAssertion(rdfs:label :Method "Method")
+SubClassOf(:Method :ProcessData)
+
+# Class: :Process (Process)
+
+AnnotationAssertion(rdfs:comment :Process "The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here.")
+AnnotationAssertion(rdfs:isDefinedBy :Process <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Process "Process")
+
+# Class: :ProcessData (ProcessData)
+
+AnnotationAssertion(rdfs:isDefinedBy :ProcessData <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :ProcessData <http://w3id.org/ProcessData>)
+
+# Class: :ProcessDataState (ProcessDataState)
+
+AnnotationAssertion(rdfs:comment :ProcessDataState "Intermediate Node which helps to add metadata to the object property connecting the Process to its sepcific ProcessData")
+AnnotationAssertion(rdfs:isDefinedBy :ProcessDataState <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :ProcessDataState "ProcessDataState")
+SubClassOf(:ProcessDataState ObjectMaxCardinality(1 :hasInitialSpaceValue :Space))
+SubClassOf(:ProcessDataState ObjectMaxCardinality(1 :hasLocationValue :Location))
+SubClassOf(:ProcessDataState ObjectMaxCardinality(1 :hasScheduleValue :Schedule))
+SubClassOf(:ProcessDataState ObjectMaxCardinality(1 :hasStatusValue :Status))
+SubClassOf(:ProcessDataState ObjectMaxCardinality(1 :hasTargetSpaceValue :Space))
+
+# Class: :RawMaterial (RawMaterial)
+
+AnnotationAssertion(rdfs:comment :RawMaterial "A basic, unprocessed material that is used to produce goods")
+AnnotationAssertion(rdfs:isDefinedBy :RawMaterial "http://w3id.org/ioc#")
+AnnotationAssertion(rdfs:label :RawMaterial "RawMaterial")
+SubClassOf(:RawMaterial :Element)
+
+# Class: :Resource (Resource)
+
+AnnotationAssertion(rdfs:comment :Resource "refers to any physical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process.")
+AnnotationAssertion(rdfs:isDefinedBy :Resource <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Resource "Resource")
+SubClassOf(:Resource :ProcessData)
+
+# Class: :Schedule (Schedule)
+
+AnnotationAssertion(rdfs:comment :Schedule "A process schedule is a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process.")
+AnnotationAssertion(rdfs:isDefinedBy :Schedule <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Schedule "Schedule")
+SubClassOf(:Schedule :ProcessData)
+
+# Class: :Space (Space)
+
+AnnotationAssertion(rdfs:comment :Space "Generic Superclass for Spatial Information")
+AnnotationAssertion(rdfs:isDefinedBy :Space <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Space "Space")
+SubClassOf(:Space :ProcessData)
+
+# Class: :Status (Status)
+
+AnnotationAssertion(rdfs:comment :Status "Status refers to the current conditionor state of the process. It is descirbed with a combination of bools.")
+AnnotationAssertion(rdfs:isDefinedBy :Status <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label :Status "Status")
+SubClassOf(:Status :ProcessData)
+
+# Class: <http://www.w3.org/2006/vcard/ns#Vcard> (vCard)
+
+AnnotationAssertion(rdfs:comment <http://www.w3.org/2006/vcard/ns#Vcard> "parent for the four explicit types of vCards (Individual, Organization, Location, Group)")
+AnnotationAssertion(rdfs:isDefinedBy <http://www.w3.org/2006/vcard/ns#Vcard> <http://www.w3.org/2006/vcard/ns#>)
+AnnotationAssertion(rdfs:label <http://www.w3.org/2006/vcard/ns#Vcard> "vCard")
+SubClassOf(<http://www.w3.org/2006/vcard/ns#Vcard> :Actor)
+
+# Class: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> (IfcSpace)
+
+AnnotationAssertion(rdfs:comment <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> "A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a building")
+AnnotationAssertion(rdfs:isDefinedBy <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#>)
+AnnotationAssertion(rdfs:label <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> "IfcSpace")
+SubClassOf(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> :Space)
+
+# Class: <https://w3id.org/bot#Element> (Element)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/bot#Element> "Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7].")
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/bot#Element> <http://w3id.org/https.//w3id.org/bot#>)
+AnnotationAssertion(rdfs:label <https://w3id.org/bot#Element> "Element")
+SubClassOf(<https://w3id.org/bot#Element> :Element)
+
+# Class: <https://w3id.org/bot#Zone> (Zone)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/bot#Zone> "A part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent.")
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/bot#Zone> <http://w3id.org/bot#>)
+AnnotationAssertion(rdfs:label <https://w3id.org/bot#Zone> "Zone")
+SubClassOf(<https://w3id.org/bot#Zone> :Space)
+
+# Class: <https://w3id.org/cto#Task> (Task)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/cto#Task> "A generic class for defining (planned or executed) construction tasks according to the CTO ontology (see https://mathib.github.io/cto-ontology/)")
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/cto#Task> <https://w3id.org/cto#>)
+AnnotationAssertion(rdfs:label <https://w3id.org/cto#Task> <http://w3id.org/Task>)
+SubClassOf(<https://w3id.org/cto#Task> :Process)
+
+# Class: <https://w3id.org/cto#TaskMethod> (TaskMethod)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/cto#TaskMethod> "CTO task method that is used in (L2) and (L3)")
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/cto#TaskMethod> <http://w3id.org/cto#>)
+AnnotationAssertion(rdfs:label <https://w3id.org/cto#TaskMethod> "TaskMethod")
+SubClassOf(<https://w3id.org/cto#TaskMethod> :Method)
+
+# Class: <https://w3id.org/omg#Geometry> (Geometry)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/omg#Geometry> "Geometry of an element.Use https://w3id.org/fog# for Geometry Formats.")
+AnnotationAssertion(rdfs:isDefinedBy <https://w3id.org/omg#Geometry> <http://w3id.org/ioc#>)
+AnnotationAssertion(rdfs:label <https://w3id.org/omg#Geometry> "Geometry")
+
+
+DisjointClasses(:Actor :Capability :Element :Information :Method :Resource :Schedule :Space :Status)
+DisjointClasses(:AuxiliaryElement :RawMaterial <https://w3id.org/bot#Element>)
+DisjointClasses(:Location <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <https://w3id.org/bot#Zone>)
+)
