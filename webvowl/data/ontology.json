@@ -1,0 +1,2561 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://w3id.org/bot", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/omg", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://w3id.org/ioc", "http://www.w3.org/2001/XMLSchema", "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL", "http://www.w3.org/2006/vcard/ns", "https://w3id.org/cto" ],
+    "title" : {
+      "en" : "IOC: Internet of Construction Ontology"
+    },
+    "iri" : "http://w3id.org/ioc",
+    "version" : "0.5.1",
+    "author" : [ "Oraskari, J., Individualized Production RWTH Aachen", "Wildemann,P., Leonhard Weiss GmbH & Co. KG", "Kirner, L., Individualized Production RWTH Aachen" ],
+    "description" : {
+      "en" : "The Internet of Construction Ontology (IoC) construction process ontology is intended to represent a comprehensive solution of how processes in the construction industry can be modelled. Due to the iterative nature of creating an ontology, the construction process ontology presented here can at best be considered a working state at the time of publication. Our approach emphasizes the simplest and most comprehensive mapping possible, which is only extended based on insights from practical use when otherwise compelling limitations in usability and applicability arise. Thus, the extension and refinement of the developed construction process ontology strongly depends on the integration of further areas of the construction value chain and the connection of further domain ontologies."
+    },
+    "comments" : {
+      "en" : "The Internet of Construction Ontology (IoC) is a top-level ontology for describing processes and process-data in the domain of construction. It is a ongoing work as part of the research project “Internet of Construction” that is funded by the Federal Ministry of Education and Research of Germany within the indirective on a joint funding initiative in the field of innovation for production, services and labor of tomorrow (funding number: 02P17D081)."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Wildemann,P., Leonhard Weiss GmbH & Co. KG",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Kirner, L., Individualized Production RWTH Aachen",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Oraskari, J., Individualized Production RWTH Aachen",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ioc",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.5.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "en",
+        "value" : "2023-11-03",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "IOC: Internet of Construction Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "75",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "2",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/ioc#CurrentProcessDataState",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CurrentProcessDataState",
+      "undefined" : "CurrentProcessDataState"
+    },
+    "comment" : {
+      "undefined" : "The current Intermediate Node which helps to add metadata to the object property connecting the Process to its sepcific ProcessData. Functionality adapted form opm ontology."
+    },
+    "id" : "14",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Process",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Process",
+      "undefined" : "Process"
+    },
+    "subClasses" : [ "33" ],
+    "comment" : {
+      "undefined" : "The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/ioc#RawMaterial",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RawMaterial",
+      "undefined" : "RawMaterial"
+    },
+    "comment" : {
+      "undefined" : "A basic, unprocessed material that is used to produce goods"
+    },
+    "id" : "35",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Element",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Element",
+      "undefined" : "Element"
+    },
+    "subClasses" : [ "35", "37", "38" ],
+    "comment" : {
+      "undefined" : "A element or a group of elements."
+    },
+    "id" : "31",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Location",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location",
+      "undefined" : "Location"
+    },
+    "comment" : {
+      "undefined" : "A location in the sense of a describable,precise point in space"
+    },
+    "id" : "51",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/omg#Geometry",
+    "baseIri" : "https://w3id.org/omg",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Geometry",
+      "undefined" : "Geometry"
+    },
+    "comment" : {
+      "undefined" : "Geometry of an element.Use https://w3id.org/fog# for Geometry Formats."
+    },
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://w3id.org/ioc#Schedule",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Schedule",
+      "undefined" : "Schedule"
+    },
+    "comment" : {
+      "undefined" : "A process schedule is a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process."
+    },
+    "id" : "6",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace",
+    "baseIri" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IfcSpace",
+      "undefined" : "IfcSpace"
+    },
+    "comment" : {
+      "undefined" : "A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a building"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://w3id.org/ioc#ProcessDataState",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcessDataState",
+      "undefined" : "ProcessDataState"
+    },
+    "subClasses" : [ "14" ],
+    "comment" : {
+      "undefined" : "Intermediate Node which helps to add metadata to the object property connecting the Process to its sepcific ProcessData"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/cto#Task",
+    "baseIri" : "https://w3id.org/cto",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/cto#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Task",
+      "undefined" : "http://w3id.org/Task"
+    },
+    "comment" : {
+      "undefined" : "A generic class for defining (planned or executed) construction tasks according to the CTO ontology (see https://mathib.github.io/cto-ontology/)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Information",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Information",
+      "undefined" : "Information"
+    },
+    "comment" : {
+      "undefined" : "http://w3id.org/ioc#"
+    },
+    "id" : "8",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Vcard",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2006/vcard/ns#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Vcard",
+      "undefined" : "vCard"
+    },
+    "comment" : {
+      "undefined" : "parent for the four explicit types of vCards (Individual, Organization, Location, Group)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "51", "37", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "73"
+  }, {
+    "instances" : 0,
+    "union" : [ "31", "77", "58", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "76"
+  }, {
+    "instances" : 0,
+    "union" : [ "31", "77", "58", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "75"
+  }, {
+    "instances" : 0,
+    "union" : [ "77", "58" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://w3id.org/ioc#Resource",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Resource",
+      "undefined" : "Resource"
+    },
+    "comment" : {
+      "undefined" : "refers to any physical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process."
+    },
+    "id" : "5",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Space",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Space",
+      "undefined" : "Space"
+    },
+    "subClasses" : [ "51", "77", "58" ],
+    "comment" : {
+      "undefined" : "Generic Superclass for Spatial Information"
+    },
+    "id" : "10",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#ProcessData",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcessData",
+      "undefined" : "http://w3id.org/ProcessData"
+    },
+    "subClasses" : [ "31", "10", "8", "16", "6", "68", "25", "5", "12" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://w3id.org/ioc#Actor",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Actor",
+      "undefined" : "Actor"
+    },
+    "subClasses" : [ "67" ],
+    "comment" : {
+      "undefined" : "A responsible person or organization. can be assigned to a process"
+    },
+    "id" : "68",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Capability",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Capability",
+      "undefined" : "Capability"
+    },
+    "comment" : {
+      "undefined" : "Refers to the ability or capacity of an individual, organization, system, or entity to perform a specific action, task, or function effectively."
+    },
+    "id" : "25",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://w3id.org/ioc#Method",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Method",
+      "undefined" : "Method"
+    },
+    "subClasses" : [ "135" ],
+    "comment" : {
+      "undefined" : "The Method that is used to perform the process described. Used as Interface to mor specific domain ontologies."
+    },
+    "id" : "16",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Status",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Status",
+      "undefined" : "Status"
+    },
+    "comment" : {
+      "undefined" : "Status refers to the current conditionor state of the process. It is descirbed with a combination of bools."
+    },
+    "id" : "12",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#AuxiliaryElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AuxiliaryElement",
+      "undefined" : "AuxiliaryElement"
+    },
+    "comment" : {
+      "undefined" : "A secondary element that is not part of the realized building afterwards."
+    },
+    "id" : "38",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/cto#TaskMethod",
+    "baseIri" : "https://w3id.org/cto",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/cto#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TaskMethod",
+      "undefined" : "TaskMethod"
+    },
+    "comment" : {
+      "undefined" : "CTO task method that is used in (L2) and (L3)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Element",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/https.//w3id.org/bot#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Element",
+      "undefined" : "Element"
+    },
+    "comment" : {
+      "undefined" : "Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7]."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "https://w3id.org/bot#Zone",
+    "baseIri" : "https://w3id.org/bot",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/bot#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Zone",
+      "undefined" : "Zone"
+    },
+    "comment" : {
+      "undefined" : "A part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "10" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "17",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://w3id.org/ioc#isContainedInValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isContainedInValue",
+      "undefined" : "isContainedInValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones from version to instance"
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputInformationValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputInformationValue",
+      "undefined" : "hasOutputInformationValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an piece of output information to one or more pieces of information"
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInitialSpaceValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInitialSpaceValue",
+      "undefined" : "hasInitialSpaceValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an inistial space to the class describing its exact value"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/ioc#isCancelled",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isCancelled",
+      "undefined" : "isCancelled"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A boolean that describes if the process was canceled."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "11"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "10",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasSchedule",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSchedule",
+      "undefined" : "hasSchedule"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Object property to connect  a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process."
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "18"
+  }, {
+    "range" : "12",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "6",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasCapabilityRequirementValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapabilityRequirementValue",
+      "undefined" : "hasCapabilityRequirementValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an capability requirement  to one or more capabilities describring a process requirement"
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "range" : "5",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/ioc#isStarted",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isStarted",
+      "undefined" : "isStarted"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A boolean that describes if the process was started."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "16",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "12",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "5",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/ioc#isvalid",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isvalid",
+      "undefined" : "isvalid"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "A boolean that describes if a ProcessDataState os considered valid trhough extra validation. WIP"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInputElementValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputElementValue",
+      "undefined" : "hasInputElementValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Property for linking a version of an element that the process transforms to the speciffic element classes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasDuration",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDuration",
+      "undefined" : "http://w3id.org/hasDuration"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Duration of a Process Schedule"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#endedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "endedAtTime",
+      "undefined" : "endedAtTime"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputInformation",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputInformation",
+      "undefined" : "hasOutputInformation"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasStatus",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "undefined" : "hasStatus"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Object property to connect a version of a condition or state of the process. It is descirbed with a combination of bools."
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasChild",
+    "inverse" : "49",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChild",
+      "undefined" : "hasChild"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Child process of a process. A process can have a undeifned number of children"
+    },
+    "attributes" : [ "object", "transitive", "inverse functional", "asymmetric" ],
+    "id" : "48"
+  }, {
+    "range" : "6",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "5",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "54",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "generatedAtTime",
+      "undefined" : "generatedAtTime"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "53"
+  }, {
+    "range" : "10",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "12",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "10",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "16",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "8",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "16",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "6",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "5",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInputInformation",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputInformation",
+      "undefined" : "hasInputInformation"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasMethod",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMethod",
+      "undefined" : "hasMethod"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property for connecting a version of a Method. Method can describe an uninstanciated process in general, like \"milling\" or \"fixing\""
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/omg#hasGeometry",
+    "baseIri" : "https://w3id.org/omg",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry",
+      "undefined" : "hasGeometry"
+    },
+    "domain" : "75",
+    "comment" : {
+      "undefined" : "Property for connecting geometries to elements, resources or spatial zones"
+    },
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasTargetSpaceValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTargetSpaceValue",
+      "undefined" : "hasTargetSpaceValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Property to add a isingle instance to a version of an output space, thus defining the transformed location or space of the process"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "78"
+  }, {
+    "range" : "77",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasScheduleValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "6",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasScheduleValue",
+      "undefined" : "hasScheduleValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Object property to connect a version of a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific proces to a instanciated Schedule"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "80"
+  }, {
+    "range" : "77",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasResource",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResource",
+      "undefined" : "hasResource"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Object property to link a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process."
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasElementValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElementValue",
+      "undefined" : "hasElementValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an Element  to one or more elements"
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "range" : "58",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInternalProcessMark",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "69",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInternalProcessMark",
+      "undefined" : "hasInternalProcessMark"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "A optional, internal process mark that can be used to add custom functionality to the process model"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "35",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "37",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "37",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "12",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "10",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "range" : "12",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasCapability",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapability",
+      "undefined" : "hasCapability"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "The version of a capability a resource inherits"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "93"
+  }, {
+    "range" : "10",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://w3id.org/ioc#isPaused",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "65",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isPaused",
+      "undefined" : "isPaused"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A boolean that describes if the process is canceled."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startedAtTime",
+      "undefined" : "startedAtTime"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "96"
+  }, {
+    "range" : "36",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "36",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "36",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "36",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInitialSpace",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInitialSpace",
+      "undefined" : "hasInitialSpace"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property to add a version of a initial space, which defines the input of a location or space which the process requires"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasCapabilityRequirement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapabilityRequirement",
+      "undefined" : "hasCapabilityRequirement"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property for adding a version of a capability requirement to a process"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://w3id.org/ioc#isContainedIn",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isContainedIn",
+      "undefined" : "isContainedIn"
+    },
+    "domain" : "73",
+    "comment" : {
+      "undefined" : "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones"
+    },
+    "attributes" : [ "object", "inverse functional", "asymmetric" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputElementValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputElementValue",
+      "undefined" : "hasOutputElementValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Property for linking a version of an element that the process has transformed to the speciffic element classes."
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInputInformationValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputInformationValue",
+      "undefined" : "hasInputInformationValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an piece of input information to one or more pieces of information"
+    },
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasInputElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasInputElement",
+      "undefined" : "hasInputElement"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Version of an element that the process transforms"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://w3id.org/ioc#isFinished",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "72",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isFinished",
+      "undefined" : "isFinished"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A boolean that describes if the process was finished."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "109"
+  }, {
+    "range" : "36",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "36",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "36",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "10",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "36",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "36",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "1",
+    "subproperty" : [ "0", "80", "7", "9", "115", "41", "116", "117", "118", "106", "119", "107", "83", "24", "120", "78" ],
+    "comment" : {
+      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasSuccessor",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSuccessor",
+      "undefined" : "hasSuccessor"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Logical Successor of a process. The process must be  finished for the sucessor to be ready."
+    },
+    "attributes" : [ "object", "transitive", "asymmetric" ],
+    "id" : "121"
+  }, {
+    "range" : "36",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "31",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "10",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasElement",
+      "undefined" : "hasElement"
+    },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "Points to a version of an element grouping"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "126"
+  }, {
+    "range" : "10",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasResourceValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasResourceValue",
+      "undefined" : "hasResourceValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Object property to link a  version of a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process, to instanciated class"
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasActorValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActorValue",
+      "undefined" : "hasActorValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an actor links to the process actor."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasParent",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParent",
+      "undefined" : "hasParent"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Parent of a Process. A Process can at most have one parent."
+    },
+    "attributes" : [ "object", "transitive", "functional", "asymmetric" ],
+    "id" : "49"
+  }, {
+    "range" : "31",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "19",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasProcessDataState",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasProcessDataState",
+      "undefined" : "hasProcessDataState"
+    },
+    "domain" : "19",
+    "subproperty" : [ "46", "47", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
+    "comment" : {
+      "undefined" : "Generalized property to connect a process to a dynamic, version of its process data."
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "20"
+  }, {
+    "range" : "31",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://w3id.org/ioc#isReady",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "66",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isReady",
+      "undefined" : "isReady"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A boolean that describes if the process is ready to start."
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasStatusValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "12",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasStatusValue",
+      "undefined" : "hasStatusValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasCapabilityValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCapabilityValue",
+      "undefined" : "hasCapabilityValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of an capability of a resource  to one or more capabilities"
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasPredecessor",
+    "inverse" : "121",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPredecessor",
+      "undefined" : "hasPredecessor"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Logical Predecessor of a process. Must be finished for the process to be ready."
+    },
+    "attributes" : [ "object", "transitive", "asymmetric" ],
+    "id" : "136"
+  }, {
+    "range" : "8",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "16",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "5",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "6",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "10",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "12",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "31",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasMethodValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMethodValue",
+      "undefined" : "hasMethodValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of a method  to one or more instanciated Methods"
+    },
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "range" : "8",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasTargetSpace",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTargetSpace",
+      "undefined" : "hasTargetSpace"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property to add a version of an output space, thus defining the transformed location or space of the process"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "130"
+  }, {
+    "range" : "25",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "31",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasLocation",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocation",
+      "undefined" : "hasLocation"
+    },
+    "domain" : "76",
+    "comment" : {
+      "undefined" : "Property to connect a element, resource or spatial zone."
+    },
+    "attributes" : [ "object", "functional", "asymmetric" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputElement",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputElement",
+      "undefined" : "hasOutputElement"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Version of an element that the process has transformed"
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasLocationValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLocationValue",
+      "undefined" : "hasLocationValue"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "object property to link a specific version of a location  to one or more location instances"
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://w3id.org/ioc#generatedByActor",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "generatedByActor",
+      "undefined" : "generatedByActor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The ioc:Actor that generated the information branch"
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasActor",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActor",
+      "undefined" : "hasActor"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "A responsible person or organization can be assigned to a process with the object property \"hasActor\" "
+    },
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "131"
+  }, {
+    "range" : "16",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  } ]
+}

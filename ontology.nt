@@ -1,0 +1,975 @@
+<http://w3id.org/ioc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/ioc> <http://purl.org/dc/terms/creator> "Kirner, L., Individualized Production RWTH Aachen"@en .
+<http://w3id.org/ioc> <http://purl.org/dc/terms/creator> "Wildemann,P., Leonhard Weiss GmbH & Co. KG"@en .
+<http://w3id.org/ioc> <http://purl.org/dc/terms/creator> "Oraskari, J., Individualized Production RWTH Aachen" .
+<http://w3id.org/ioc> <http://purl.org/dc/terms/description> "The Internet of Construction Ontology (IoC) construction process ontology is intended to represent a comprehensive solution of how processes in the construction industry can be modelled. Due to the iterative nature of creating an ontology, the construction process ontology presented here can at best be considered a working state at the time of publication. Our approach emphasizes the simplest and most comprehensive mapping possible, which is only extended based on insights from practical use when otherwise compelling limitations in usability and applicability arise. Thus, the extension and refinement of the developed construction process ontology strongly depends on the integration of further areas of the construction value chain and the connection of further domain ontologies."@en .
+<http://w3id.org/ioc> <http://purl.org/dc/terms/issued> "2023-11-03"@en .
+<http://w3id.org/ioc> <http://purl.org/dc/terms/title> "IOC: Internet of Construction Ontology"@en .
+<http://w3id.org/ioc> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ioc" .
+<http://w3id.org/ioc> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/ioc#" .
+<http://w3id.org/ioc> <http://www.w3.org/2000/01/rdf-schema#comment> "The Internet of Construction Ontology (IoC) is a top-level ontology for describing processes and process-data in the domain of construction. It is a ongoing work as part of the research project “Internet of Construction” that is funded by the Federal Ministry of Education and Research of Germany within the indirective on a joint funding initiative in the field of innovation for production, services and labor of tomorrow (funding number: 02P17D081)."@en .
+<http://w3id.org/ioc> <http://www.w3.org/2002/07/owl#versionInfo> "0.5.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#family-name
+<http://www.w3.org/2006/vcard/ns#family-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#fn
+<http://www.w3.org/2006/vcard/ns#fn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#given-name
+<http://www.w3.org/2006/vcard/ns#given-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#hasOrganizationName
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#hasURL
+<http://www.w3.org/2006/vcard/ns#hasURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2006/vcard/ns#organization-name
+<http://www.w3.org/2006/vcard/ns#organization-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#dateTime
+<http://www.w3.org/2001/XMLSchema#dateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#duration
+<http://www.w3.org/2001/XMLSchema#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/ioc#generatedByActor
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Actor> .
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/2000/01/rdf-schema#comment> "The ioc:Actor that generated the information branch" .
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#generatedByActor> <http://www.w3.org/2000/01/rdf-schema#label> "generatedByActor" .
+# 
+# http://w3id.org/ioc#hasActor
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/2000/01/rdf-schema#comment> "A responsible person or organization can be assigned to a process with the object property \"hasActor\" " .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "hasActor" .
+# 
+# http://w3id.org/ioc#hasActorValue
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Actor> .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an actor links to the process actor." .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasActorValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasActorValue" .
+# 
+# http://w3id.org/ioc#hasCapability
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Resource> .
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of a capability a resource inherits" .
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasCapability> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapability" .
+# 
+# http://w3id.org/ioc#hasCapabilityRequirement
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for adding a version of a capability requirement to a process" .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasCapabilityRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapabilityRequirement" .
+# 
+# http://w3id.org/ioc#hasCapabilityRequirementValue
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Capability> .
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an capability requirement  to one or more capabilities describring a process requirement" .
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasCapabilityRequirementValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapabilityRequirementValue" .
+# 
+# http://w3id.org/ioc#hasCapabilityValue
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Capability> .
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an capability of a resource  to one or more capabilities" .
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasCapabilityValue" .
+# 
+# http://w3id.org/ioc#hasChild
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/ioc#hasParent> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/2000/01/rdf-schema#comment> "Child process of a process. A process can have a undeifned number of children" .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasChild> <http://www.w3.org/2000/01/rdf-schema#label> "hasChild" .
+# 
+# http://w3id.org/ioc#hasElement
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Element> .
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Points to a version of an element grouping" .
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasElement> <http://www.w3.org/2000/01/rdf-schema#label> "hasElement" .
+# 
+# http://w3id.org/ioc#hasElementValue
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Element> .
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an Element  to one or more elements" .
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasElementValue" .
+# 
+# http://w3id.org/ioc#hasInitialSpace
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to add a version of a initial space, which defines the input of a location or space which the process requires" .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInitialSpace> <http://www.w3.org/2000/01/rdf-schema#label> "hasInitialSpace" .
+# 
+# http://w3id.org/ioc#hasInitialSpaceValue
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Space> .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an inistial space to the class describing its exact value" .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInitialSpaceValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasInitialSpaceValue" .
+# 
+# http://w3id.org/ioc#hasInputElement
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Version of an element that the process transforms" .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInputElement> <http://www.w3.org/2000/01/rdf-schema#label> "hasInputElement" .
+# 
+# http://w3id.org/ioc#hasInputElementValue
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Element> .
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for linking a version of an element that the process transforms to the speciffic element classes." .
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInputElementValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasInputElementValue" .
+# 
+# http://w3id.org/ioc#hasInputInformation
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for connecting a version of a piece of information or a infromation container to a process" .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInputInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasInputInformation" .
+# 
+# http://w3id.org/ioc#hasInputInformationValue
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Information> .
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an piece of input information to one or more pieces of information" .
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInputInformationValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasInputInformationValue" .
+# 
+# http://w3id.org/ioc#hasLocation
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Element> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Resource> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Zone> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to connect a element, resource or spatial zone." .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation" .
+# 
+# http://w3id.org/ioc#hasLocationValue
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Location> .
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of a location  to one or more location instances" .
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasLocationValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocationValue" .
+# 
+# http://w3id.org/ioc#hasMethod
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for connecting a version of a Method. Method can describe an uninstanciated process in general, like \"milling\" or \"fixing\"" .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasMethod> <http://www.w3.org/2000/01/rdf-schema#label> "hasMethod" .
+# 
+# http://w3id.org/ioc#hasMethodValue
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Method> .
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of a method  to one or more instanciated Methods" .
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasMethodValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasMethodValue" .
+# 
+# http://w3id.org/ioc#hasOutputElement
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Version of an element that the process has transformed" .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasOutputElement> <http://www.w3.org/2000/01/rdf-schema#label> "hasOutputElement" .
+# 
+# http://w3id.org/ioc#hasOutputElementValue
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Element> .
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for linking a version of an element that the process has transformed to the speciffic element classes." .
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasOutputElementValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasOutputElementValue" .
+# 
+# http://w3id.org/ioc#hasOutputInformation
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process" .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasOutputInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasOutputInformation" .
+# 
+# http://w3id.org/ioc#hasOutputInformationValue
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Information> .
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/2000/01/rdf-schema#comment> "object property to link a specific version of an piece of output information to one or more pieces of information" .
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasOutputInformationValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasOutputInformationValue" .
+# 
+# http://w3id.org/ioc#hasParent
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent of a Process. A Process can at most have one parent." .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasParent> <http://www.w3.org/2000/01/rdf-schema#label> "hasParent" .
+# 
+# http://w3id.org/ioc#hasPredecessor
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/ioc#hasSuccessor> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/2000/01/rdf-schema#comment> "Logical Predecessor of a process. Must be finished for the process to be ready." .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasPredecessor> <http://www.w3.org/2000/01/rdf-schema#label> "hasPredecessor" .
+# 
+# http://w3id.org/ioc#hasProcessDataState
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/2000/01/rdf-schema#comment> "Generalized property to connect a process to a dynamic, version of its process data." .
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasProcessDataState> <http://www.w3.org/2000/01/rdf-schema#label> "hasProcessDataState" .
+# 
+# http://w3id.org/ioc#hasResource
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to link a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process." .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasResource> <http://www.w3.org/2000/01/rdf-schema#label> "hasResource" .
+# 
+# http://w3id.org/ioc#hasResourceValue
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Resource> .
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to link a  version of a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process, to instanciated class" .
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasResourceValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasResourceValue" .
+# 
+# http://w3id.org/ioc#hasSchedule
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to connect  a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process." .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "hasSchedule" .
+# 
+# http://w3id.org/ioc#hasScheduleValue
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Schedule> .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to connect a version of a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific proces to a instanciated Schedule" .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasScheduleValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasScheduleValue" .
+# 
+# http://w3id.org/ioc#hasStatus
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to connect a version of a condition or state of the process. It is descirbed with a combination of bools." .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatus" .
+# 
+# http://w3id.org/ioc#hasStatusValue
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools." .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasStatusValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasStatusValue" .
+# 
+# http://w3id.org/ioc#hasSuccessor
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/2000/01/rdf-schema#comment> "Logical Successor of a process. The process must be  finished for the sucessor to be ready." .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasSuccessor> <http://www.w3.org/2000/01/rdf-schema#label> "hasSuccessor" .
+# 
+# http://w3id.org/ioc#hasTargetSpace
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasProcessDataState> .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to add a version of an output space, thus defining the transformed location or space of the process" .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasTargetSpace> <http://www.w3.org/2000/01/rdf-schema#label> "hasTargetSpace" .
+# 
+# http://w3id.org/ioc#hasTargetSpaceValue
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#Space> .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to add a isingle instance to a version of an output space, thus defining the transformed location or space of the process" .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasTargetSpaceValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasTargetSpaceValue" .
+# 
+# http://w3id.org/ioc#hasValue
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData." .
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue" .
+# 
+# http://w3id.org/ioc#isContainedIn
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Location> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Resource> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones" .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isContainedIn" .
+# 
+# http://w3id.org/ioc#isContainedInValue
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://w3id.org/ioc#hasValue> .
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Zone> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones from version to instance" .
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isContainedInValue> <http://www.w3.org/2000/01/rdf-schema#label> "isContainedInValue" .
+# 
+# https://w3id.org/omg#hasGeometry
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Element> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Resource> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Zone> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/omg#Geometry> .
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Property for connecting geometries to elements, resources or spatial zones" .
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<https://w3id.org/omg#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeometry" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/ioc#hasDuration
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Schedule> .
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of a Process Schedule" .
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasDuration> <http://www.w3.org/2000/01/rdf-schema#label> <http://w3id.org/hasDuration> .
+# 
+# http://w3id.org/ioc#hasInternalProcessMark
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Process> .
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/2000/01/rdf-schema#comment> "A optional, internal process mark that can be used to add custom functionality to the process model" .
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#hasInternalProcessMark> <http://www.w3.org/2000/01/rdf-schema#label> "hasInternalProcessMark" .
+# 
+# http://w3id.org/ioc#isCancelled
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean that describes if the process was canceled." .
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isCancelled> <http://www.w3.org/2000/01/rdf-schema#label> "isCancelled" .
+# 
+# http://w3id.org/ioc#isFinished
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean that describes if the process was finished." .
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isFinished> <http://www.w3.org/2000/01/rdf-schema#label> "isFinished" .
+# 
+# http://w3id.org/ioc#isPaused
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean that describes if the process is canceled." .
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isPaused> <http://www.w3.org/2000/01/rdf-schema#label> "isPaused" .
+# 
+# http://w3id.org/ioc#isReady
+<http://w3id.org/ioc#isReady> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#isReady> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#isReady> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#isReady> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/ioc#isReady> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean that describes if the process is ready to start." .
+<http://w3id.org/ioc#isReady> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isReady> <http://www.w3.org/2000/01/rdf-schema#label> "isReady" .
+# 
+# http://w3id.org/ioc#isStarted
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean that describes if the process was started." .
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isStarted> <http://www.w3.org/2000/01/rdf-schema#label> "isStarted" .
+# 
+# http://w3id.org/ioc#isvalid
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/2000/01/rdf-schema#comment> "A boolean that describes if a ProcessDataState os considered valid trhough extra validation. WIP" .
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#isvalid> <http://www.w3.org/2000/01/rdf-schema#label> "isvalid" .
+# 
+# http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Schedule> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger." .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "endedAtTime" .
+# 
+# http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#ProcessDataState> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation." .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "generatedAtTime" .
+# 
+# http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ioc#Schedule> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger." .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "startedAtTime" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/ioc#Actor
+<http://w3id.org/ioc#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "A responsible person or organization. can be assigned to a process" .
+<http://w3id.org/ioc#Actor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor" .
+# 
+# http://w3id.org/ioc#AuxiliaryElement
+<http://w3id.org/ioc#AuxiliaryElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#AuxiliaryElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Element> .
+<http://w3id.org/ioc#AuxiliaryElement> <http://www.w3.org/2000/01/rdf-schema#comment> "A secondary element that is not part of the realized building afterwards." .
+<http://w3id.org/ioc#AuxiliaryElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc> .
+<http://w3id.org/ioc#AuxiliaryElement> <http://www.w3.org/2000/01/rdf-schema#label> "AuxiliaryElement" .
+# 
+# http://w3id.org/ioc#Capability
+<http://w3id.org/ioc#Capability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Capability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Capability> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the ability or capacity of an individual, organization, system, or entity to perform a specific action, task, or function effectively." .
+<http://w3id.org/ioc#Capability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Capability> <http://www.w3.org/2000/01/rdf-schema#label> "Capability" .
+# 
+# http://w3id.org/ioc#CurrentProcessDataState
+<http://w3id.org/ioc#CurrentProcessDataState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#CurrentProcessDataState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessDataState> .
+<http://w3id.org/ioc#CurrentProcessDataState> <http://www.w3.org/2000/01/rdf-schema#comment> "The current Intermediate Node which helps to add metadata to the object property connecting the Process to its sepcific ProcessData. Functionality adapted form opm ontology." .
+<http://w3id.org/ioc#CurrentProcessDataState> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#CurrentProcessDataState> <http://www.w3.org/2000/01/rdf-schema#label> "CurrentProcessDataState" .
+# 
+# http://w3id.org/ioc#Element
+<http://w3id.org/ioc#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Element> <http://www.w3.org/2000/01/rdf-schema#comment> "A element or a group of elements." .
+<http://w3id.org/ioc#Element> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element" .
+# 
+# http://w3id.org/ioc#Information
+<http://w3id.org/ioc#Information> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Information> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Information> <http://www.w3.org/2000/01/rdf-schema#comment> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Information> <http://www.w3.org/2000/01/rdf-schema#comment> "Structured Process Data. This class is meant to be a loose connection to other files and information containers." .
+<http://w3id.org/ioc#Information> <http://www.w3.org/2000/01/rdf-schema#label> "Information" .
+# 
+# http://w3id.org/ioc#Location
+<http://w3id.org/ioc#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Space> .
+<http://w3id.org/ioc#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A location in the sense of a describable,precise point in space" .
+<http://w3id.org/ioc#Location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://w3id.org/ioc#Method
+<http://w3id.org/ioc#Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Method> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Method> <http://www.w3.org/2000/01/rdf-schema#comment> "The Method that is used to perform the process described. Used as Interface to mor specific domain ontologies." .
+<http://w3id.org/ioc#Method> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc> .
+<http://w3id.org/ioc#Method> <http://www.w3.org/2000/01/rdf-schema#label> "Method" .
+# 
+# http://w3id.org/ioc#Process
+<http://w3id.org/ioc#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Process> <http://www.w3.org/2000/01/rdf-schema#comment> "The generic class process serves as the central element of the construction process ontology. It can represent a classical process or a subfield common in some definitions such as an activity or a task. Due to the problem of the subjectivity of classifications of the term, no further distinction will be made here." .
+<http://w3id.org/ioc#Process> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process" .
+# 
+# http://w3id.org/ioc#ProcessData
+<http://w3id.org/ioc#ProcessData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#ProcessData> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#ProcessData> <http://www.w3.org/2000/01/rdf-schema#label> <http://w3id.org/ProcessData> .
+# 
+# http://w3id.org/ioc#ProcessDataState
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/ioc#hasInitialSpaceValue> .
+_:genid18 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/ioc#Space> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/ioc#hasLocationValue> .
+_:genid19 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/ioc#Location> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/ioc#hasScheduleValue> .
+_:genid20 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/ioc#Schedule> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/ioc#hasStatusValue> .
+_:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/ioc#Status> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/ioc#hasTargetSpaceValue> .
+_:genid22 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/ioc#Space> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#comment> "Intermediate Node which helps to add metadata to the object property connecting the Process to its sepcific ProcessData" .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#ProcessDataState> <http://www.w3.org/2000/01/rdf-schema#label> "ProcessDataState" .
+# 
+# http://w3id.org/ioc#RawMaterial
+<http://w3id.org/ioc#RawMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#RawMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Element> .
+<http://w3id.org/ioc#RawMaterial> <http://www.w3.org/2000/01/rdf-schema#comment> "A basic, unprocessed material that is used to produce goods" .
+<http://w3id.org/ioc#RawMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://w3id.org/ioc#" .
+<http://w3id.org/ioc#RawMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "RawMaterial" .
+# 
+# http://w3id.org/ioc#Resource
+<http://w3id.org/ioc#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "refers to any physical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process." .
+<http://w3id.org/ioc#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource" .
+# 
+# http://w3id.org/ioc#Schedule
+<http://w3id.org/ioc#Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Schedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Schedule> <http://www.w3.org/2000/01/rdf-schema#comment> "A process schedule is a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process." .
+<http://w3id.org/ioc#Schedule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Schedule> <http://www.w3.org/2000/01/rdf-schema#label> "Schedule" .
+# 
+# http://w3id.org/ioc#Space
+<http://w3id.org/ioc#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Space> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Space> <http://www.w3.org/2000/01/rdf-schema#comment> "Generic Superclass for Spatial Information" .
+<http://w3id.org/ioc#Space> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Space> <http://www.w3.org/2000/01/rdf-schema#label> "Space" .
+# 
+# http://w3id.org/ioc#Status
+<http://w3id.org/ioc#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ioc#Status> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#ProcessData> .
+<http://w3id.org/ioc#Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Status refers to the current conditionor state of the process. It is descirbed with a combination of bools." .
+<http://w3id.org/ioc#Status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<http://w3id.org/ioc#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status" .
+# 
+# http://www.w3.org/2006/vcard/ns#Vcard
+<http://www.w3.org/2006/vcard/ns#Vcard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Vcard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Actor> .
+<http://www.w3.org/2006/vcard/ns#Vcard> <http://www.w3.org/2000/01/rdf-schema#comment> "parent for the four explicit types of vCards (Individual, Organization, Location, Group)" .
+<http://www.w3.org/2006/vcard/ns#Vcard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns#> .
+<http://www.w3.org/2006/vcard/ns#Vcard> <http://www.w3.org/2000/01/rdf-schema#label> "vCard" .
+# 
+# https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Space> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "A space represents an area or volume bounded actually or theoretically. Spaces are areas or volumes that provide for certain functions within a building" .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#> .
+<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> <http://www.w3.org/2000/01/rdf-schema#label> "IfcSpace" .
+# 
+# https://w3id.org/bot#Element
+<https://w3id.org/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Element> .
+<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#comment> "Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7]." .
+<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/https.//w3id.org/bot#> .
+<https://w3id.org/bot#Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element" .
+# 
+# https://w3id.org/bot#Zone
+<https://w3id.org/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Space> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#comment> "A part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent." .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/bot#> .
+<https://w3id.org/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#label> "Zone" .
+# 
+# https://w3id.org/cto#Task
+<https://w3id.org/cto#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cto#Task> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Process> .
+<https://w3id.org/cto#Task> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic class for defining (planned or executed) construction tasks according to the CTO ontology (see https://mathib.github.io/cto-ontology/)" .
+<https://w3id.org/cto#Task> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/cto#> .
+<https://w3id.org/cto#Task> <http://www.w3.org/2000/01/rdf-schema#label> <http://w3id.org/Task> .
+# 
+# https://w3id.org/cto#TaskMethod
+<https://w3id.org/cto#TaskMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cto#TaskMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ioc#Method> .
+<https://w3id.org/cto#TaskMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "CTO task method that is used in (L2) and (L3)" .
+<https://w3id.org/cto#TaskMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/cto#> .
+<https://w3id.org/cto#TaskMethod> <http://www.w3.org/2000/01/rdf-schema#label> "TaskMethod" .
+# 
+# https://w3id.org/omg#Geometry
+<https://w3id.org/omg#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/omg#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "Geometry of an element.Use https://w3id.org/fog# for Geometry Formats." .
+<https://w3id.org/omg#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://w3id.org/ioc#> .
+<https://w3id.org/omg#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid23 <http://www.w3.org/2002/07/owl#members> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Actor> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Capability> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Element> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Information> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Method> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Resource> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Schedule> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Space> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Status> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid33 <http://www.w3.org/2002/07/owl#members> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#AuxiliaryElement> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#RawMaterial> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Element> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid37 <http://www.w3.org/2002/07/owl#members> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#Location> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/bot#Zone> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid41 <http://www.w3.org/2002/07/owl#members> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasActor> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasCapabilityRequirement> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasInitialSpace> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasInputElement> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasInputInformation> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasMethod> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasOutputElement> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasOutputInformation> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasResource> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasSchedule> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasStatus> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasTargetSpace> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid54 <http://www.w3.org/2002/07/owl#members> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasActorValue> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasCapabilityRequirementValue> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasCapabilityValue> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasElementValue> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasInitialSpaceValue> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasInputElementValue> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasInputInformationValue> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasLocationValue> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasMethodValue> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasOutputElementValue> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasOutputInformationValue> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasResourceValue> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasScheduleValue> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasStatusValue> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#hasTargetSpaceValue> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/ioc#isContainedInValue> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
