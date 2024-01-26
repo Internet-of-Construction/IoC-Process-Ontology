@@ -11,7 +11,7 @@
                                                           "Wildemann,P., Leonhard Weiss GmbH & Co. KG"@en ,
                                                           "Oraskari, J., Individualized Production RWTH Aachen" ;
                        <http://purl.org/dc/terms/description> "The Internet of Construction Ontology (IoC) construction process ontology is intended to represent a comprehensive solution of how processes in the construction industry can be modelled. Due to the iterative nature of creating an ontology, the construction process ontology presented here can at best be considered a working state at the time of publication. Our approach emphasizes the simplest and most comprehensive mapping possible, which is only extended based on insights from practical use when otherwise compelling limitations in usability and applicability arise. Thus, the extension and refinement of the developed construction process ontology strongly depends on the integration of further areas of the construction value chain and the connection of further domain ontologies."@en ;
-                       <http://purl.org/dc/terms/issued> "2023-11-03"@en ;
+                       <http://purl.org/dc/terms/issued> "2024-01-26"@en ;
                        <http://purl.org/dc/terms/title> "IOC: Internet of Construction Ontology"@en ;
                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "ioc" ;
                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://w3id.org/ioc#" ;
