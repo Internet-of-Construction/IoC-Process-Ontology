@@ -81,7 +81,7 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -105,10 +105,10 @@
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "67",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "69",
@@ -156,10 +156,10 @@
     "id" : "40",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "96",
+    "id" : "97",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "55",
+    "id" : "54",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "16",
@@ -306,7 +306,7 @@
       "undefined" : "Geometry of an element.Use https://w3id.org/fog# for Geometry Formats."
     },
     "attributes" : [ "external" ],
-    "id" : "53"
+    "id" : "55"
   }, {
     "iri" : "http://w3id.org/ioc#Schedule",
     "baseIri" : "http://w3id.org/ioc",
@@ -415,19 +415,6 @@
     "id" : "33",
     "superClasses" : [ "19" ]
   }, {
-    "iri" : "http://w3id.org/ioc#Information",
-    "baseIri" : "http://w3id.org/ioc",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Information",
-      "undefined" : "Information"
-    },
-    "comment" : {
-      "undefined" : "Structured Process Data. This class is meant to be a loose connection to other files and information containers."
-    },
-    "id" : "8",
-    "superClasses" : [ "35" ]
-  }, {
     "iri" : "http://www.w3.org/2006/vcard/ns#Vcard",
     "baseIri" : "http://www.w3.org/2006/vcard/ns",
     "instances" : 0,
@@ -449,6 +436,19 @@
     "attributes" : [ "external" ],
     "id" : "67",
     "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#Information",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Information",
+      "undefined" : "Information"
+    },
+    "comment" : {
+      "undefined" : "Structured Process Data. This class is meant to be a loose connection to other files and information containers."
+    },
+    "id" : "8",
+    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -619,14 +619,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "96",
+    "id" : "97",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "54",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -831,7 +831,7 @@
     "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "48",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
     "id" : "49",
@@ -843,7 +843,7 @@
     "id" : "52",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "54",
+    "id" : "53",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "56",
@@ -933,7 +933,7 @@
     "id" : "95",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "97",
+    "id" : "96",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "98",
@@ -1017,7 +1017,7 @@
     "id" : "118",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
     "id" : "128",
@@ -1399,54 +1399,8 @@
     "comment" : {
       "undefined" : "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "functional", "external", "datatype" ],
     "id" : "44"
-  }, {
-    "iri" : "http://w3id.org/ioc#hasChild",
-    "inverse" : "47",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "19",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasChild",
-      "undefined" : "hasChild"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "Child process of a process. A process can have a undeifned number of children"
-    },
-    "attributes" : [ "object", "transitive", "inverse functional", "asymmetric" ],
-    "id" : "46"
-  }, {
-    "iri" : "http://w3id.org/ioc#hasOutputInformation",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasOutputInformation",
-      "undefined" : "hasOutputInformation"
-    },
-    "superproperty" : [ "20" ],
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process"
-    },
-    "attributes" : [ "object", "asymmetric" ],
-    "id" : "48"
   }, {
     "iri" : "http://w3id.org/ioc#hasStatus",
     "baseIri" : "http://w3id.org/ioc",
@@ -1469,6 +1423,52 @@
       "undefined" : "Object property to connect a version of a condition or state of the process. It is descirbed with a combination of bools."
     },
     "attributes" : [ "object", "asymmetric" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasChild",
+    "inverse" : "48",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChild",
+      "undefined" : "hasChild"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Child process of a process. A process can have a undeifned number of children"
+    },
+    "attributes" : [ "object", "transitive", "inverse functional", "asymmetric" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasOutputInformation",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutputInformation",
+      "undefined" : "hasOutputInformation"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process"
+    },
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "49"
   }, {
     "range" : "6",
@@ -1483,7 +1483,7 @@
   }, {
     "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "55",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1500,8 +1500,8 @@
     "comment" : {
       "undefined" : "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "54"
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "53"
   }, {
     "range" : "10",
     "domain" : "31",
@@ -1591,7 +1591,7 @@
   }, {
     "iri" : "https://w3id.org/omg#hasGeometry",
     "baseIri" : "https://w3id.org/omg",
-    "range" : "53",
+    "range" : "55",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1802,28 +1802,6 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
-    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "96",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "startedAtTime",
-      "undefined" : "startedAtTime"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
-    },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "95"
-  }, {
     "iri" : "http://w3id.org/ioc#isPaused",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "65",
@@ -1844,7 +1822,29 @@
       "undefined" : "A boolean that describes if the process is canceled."
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "97"
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startedAtTime",
+      "undefined" : "startedAtTime"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
+    },
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "96"
   }, {
     "range" : "35",
     "domain" : "5",
@@ -2213,7 +2213,7 @@
       "undefined" : "Parent of a Process. A Process can at most have one parent."
     },
     "attributes" : [ "object", "transitive", "functional", "asymmetric" ],
-    "id" : "47"
+    "id" : "48"
   }, {
     "range" : "31",
     "domain" : "36",
@@ -2241,7 +2241,7 @@
       "undefined" : "hasProcessDataState"
     },
     "domain" : "19",
-    "subproperty" : [ "48", "49", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
+    "subproperty" : [ "49", "46", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
     "comment" : {
       "undefined" : "Generalized property to connect a process to a dynamic, version of its process data."
     },
