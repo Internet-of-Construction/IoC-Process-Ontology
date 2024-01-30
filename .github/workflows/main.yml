@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0 # fetches all history for all branches and tags
 
       - name: Install Java
         run: |
@@ -28,46 +26,19 @@ jobs:
           echo "Creating documentation..."
           mkdir -p public doc
           wget https://github.com/dgarijo/Widoco/releases/download/v1.4.14/widoco-1.4.14-jar-with-dependencies.jar -O widoco.jar
-          java -jar widoco.jar -confFile config/config.properties -ontFile ioc.owl -outFolder doc -webVowl -rewriteAll -excludeIntroduction
+          java -jar widoco.jar -confFile config/config.properties -ontFile ioc.owl -outFolder doc -webVowl -rewriteAll
           mv doc/index-en.html doc/index.html
 
       - name: Copy results to /public for publishing
         run: cp -r doc/* public
+
+      - name: Copy description-en.html to /public/sections
+        run: |
+          mkdir -p public/sections
+          cp description-en.html public/sections/description-en.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
-      - name: Copy description-en.html to gh-pages branch
-        run: |
-          # Make sure we are in the git directory
-          cd $GITHUB_WORKSPACE
-
-          # Configure git
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          
-          # Fetch all branches
-          git fetch --all
-          
-          # Check if gh-pages branch exists and checkout, else create new gh-pages branch from main
-          if git show-ref --quiet refs/heads/gh-pages; then
-            git checkout gh-pages
-          else
-            git checkout -b gh-pages
-          fi
-          
-          # Ensure the sections directory exists
-          mkdir -p sections
-          
-          # Copy the file from the 'main' branch to the 'sections' directory in the 'gh-pages' branch
-          git restore --source=main -- description-en.html
-          mv description-en.html sections/
-          
-          # Add, commit, and push changes
-          git add sections/description-en.html
-          git commit -m "Update description-en.html" || echo "No changes to commit"
-          git push origin gh-pages || echo "Push failed, check permissions and branch protection rules"
-        working-directory: ${{ github.workspace }} # Explicitly set the working directory
