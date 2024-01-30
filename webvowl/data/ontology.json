@@ -831,10 +831,10 @@
     "id" : "46",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "47",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "48",
+    "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "50",
@@ -1017,7 +1017,7 @@
     "id" : "118",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
     "id" : "128",
@@ -1124,7 +1124,7 @@
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputInformationValue",
@@ -1170,7 +1170,7 @@
     "comment" : {
       "undefined" : "object property to link a specific version of an inistial space to the class describing its exact value"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "9"
   }, {
     "iri" : "http://w3id.org/ioc#isCancelled",
@@ -1197,12 +1197,12 @@
   }, {
     "range" : "12",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "15"
   }, {
     "range" : "10",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/ioc#hasSchedule",
@@ -1225,22 +1225,22 @@
     "comment" : {
       "undefined" : "Object property to connect  a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific process."
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "18"
   }, {
     "range" : "12",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
     "range" : "10",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "22"
   }, {
     "range" : "6",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityRequirementValue",
@@ -1268,7 +1268,7 @@
   }, {
     "range" : "5",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
     "iri" : "http://w3id.org/ioc#isStarted",
@@ -1295,22 +1295,22 @@
   }, {
     "range" : "16",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
     "range" : "12",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "30"
   }, {
     "range" : "6",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "32"
   }, {
     "range" : "5",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "iri" : "http://w3id.org/ioc#isvalid",
@@ -1402,9 +1402,10 @@
     "attributes" : [ "functional", "datatype", "external" ],
     "id" : "44"
   }, {
-    "iri" : "http://w3id.org/ioc#hasStatus",
+    "iri" : "http://w3id.org/ioc#hasChild",
+    "inverse" : "47",
     "baseIri" : "http://w3id.org/ioc",
-    "range" : "1",
+    "range" : "19",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1414,15 +1415,14 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasStatus",
-      "undefined" : "hasStatus"
+      "IRI-based" : "hasChild",
+      "undefined" : "hasChild"
     },
-    "superproperty" : [ "20" ],
     "domain" : "19",
     "comment" : {
-      "undefined" : "Object property to connect a version of a condition or state of the process. It is descirbed with a combination of bools."
+      "undefined" : "Child process of a process. A process can have a undeifned number of children"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "transitive", "inverse functional", "asymmetric" ],
     "id" : "46"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputInformation",
@@ -1445,13 +1445,12 @@
     "comment" : {
       "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process"
     },
-    "attributes" : [ "asymmetric", "object" ],
-    "id" : "47"
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "48"
   }, {
-    "iri" : "http://w3id.org/ioc#hasChild",
-    "inverse" : "49",
+    "iri" : "http://w3id.org/ioc#hasStatus",
     "baseIri" : "http://w3id.org/ioc",
-    "range" : "19",
+    "range" : "1",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1461,24 +1460,25 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "hasChild",
-      "undefined" : "hasChild"
+      "IRI-based" : "hasStatus",
+      "undefined" : "hasStatus"
     },
+    "superproperty" : [ "20" ],
     "domain" : "19",
     "comment" : {
-      "undefined" : "Child process of a process. A process can have a undeifned number of children"
+      "undefined" : "Object property to connect a version of a condition or state of the process. It is descirbed with a combination of bools."
     },
-    "attributes" : [ "transitive", "inverse functional", "asymmetric", "object" ],
-    "id" : "48"
+    "attributes" : [ "object", "asymmetric" ],
+    "id" : "49"
   }, {
     "range" : "6",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "50"
   }, {
     "range" : "5",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
@@ -1505,42 +1505,42 @@
   }, {
     "range" : "10",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "range" : "12",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "57"
   }, {
     "range" : "10",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
     "range" : "16",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "range" : "8",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "range" : "16",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
     "range" : "6",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
     "range" : "5",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "64"
   }, {
     "iri" : "http://w3id.org/ioc#hasInputInformation",
@@ -1563,7 +1563,7 @@
     "comment" : {
       "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "70"
   }, {
     "iri" : "http://w3id.org/ioc#hasMethod",
@@ -1586,7 +1586,7 @@
     "comment" : {
       "undefined" : "Property for connecting a version of a Method. Method can describe an uninstanciated process in general, like \"milling\" or \"fixing\""
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "71"
   }, {
     "iri" : "https://w3id.org/omg#hasGeometry",
@@ -1608,7 +1608,7 @@
     "comment" : {
       "undefined" : "Property for connecting geometries to elements, resources or spatial zones"
     },
-    "attributes" : [ "inverse functional", "object", "external" ],
+    "attributes" : [ "object", "inverse functional", "external" ],
     "id" : "74"
   }, {
     "iri" : "http://w3id.org/ioc#hasTargetSpaceValue",
@@ -1631,12 +1631,12 @@
     "comment" : {
       "undefined" : "Property to add a isingle instance to a version of an output space, thus defining the transformed location or space of the process"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "78"
   }, {
     "range" : "77",
     "domain" : "58",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
     "iri" : "http://w3id.org/ioc#hasScheduleValue",
@@ -1659,12 +1659,12 @@
     "comment" : {
       "undefined" : "Object property to connect a version of a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific proces to a instanciated Schedule"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "80"
   }, {
     "range" : "77",
     "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "81"
   }, {
     "iri" : "http://w3id.org/ioc#hasResource",
@@ -1687,7 +1687,7 @@
     "comment" : {
       "undefined" : "Object property to link a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process."
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "82"
   }, {
     "iri" : "http://w3id.org/ioc#hasElementValue",
@@ -1715,7 +1715,7 @@
   }, {
     "range" : "58",
     "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
     "iri" : "http://w3id.org/ioc#hasInternalProcessMark",
@@ -1742,37 +1742,37 @@
   }, {
     "range" : "36",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
   }, {
     "range" : "12",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "87"
   }, {
     "range" : "37",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "88"
   }, {
     "range" : "37",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "89"
   }, {
     "range" : "12",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "90"
   }, {
     "range" : "10",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "91"
   }, {
     "range" : "12",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "92"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapability",
@@ -1794,12 +1794,12 @@
     "comment" : {
       "undefined" : "The version of a capability a resource inherits"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "93"
   }, {
     "range" : "10",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
     "iri" : "http://www.w3.org/ns/prov#startedAtTime",
@@ -1848,27 +1848,27 @@
   }, {
     "range" : "35",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
     "range" : "35",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "99"
   }, {
     "range" : "68",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
     "range" : "35",
     "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
     "range" : "35",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "102"
   }, {
     "iri" : "http://w3id.org/ioc#hasInitialSpace",
@@ -1891,7 +1891,7 @@
     "comment" : {
       "undefined" : "Property to add a version of a initial space, which defines the input of a location or space which the process requires"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "103"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityRequirement",
@@ -1914,7 +1914,7 @@
     "comment" : {
       "undefined" : "Property for adding a version of a capability requirement to a process"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "104"
   }, {
     "iri" : "http://w3id.org/ioc#isContainedIn",
@@ -1936,7 +1936,7 @@
     "comment" : {
       "undefined" : "Object Property to describe the containment of Locations, Resources or Elements in Spatial Zones"
     },
-    "attributes" : [ "inverse functional", "asymmetric", "object" ],
+    "attributes" : [ "object", "inverse functional", "asymmetric" ],
     "id" : "105"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputElementValue",
@@ -2005,7 +2005,7 @@
     "comment" : {
       "undefined" : "Version of an element that the process transforms"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "108"
   }, {
     "iri" : "http://w3id.org/ioc#isFinished",
@@ -2032,27 +2032,27 @@
   }, {
     "range" : "35",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
   }, {
     "range" : "35",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "111"
   }, {
     "range" : "35",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "112"
   }, {
     "range" : "10",
     "domain" : "58",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "113"
   }, {
     "range" : "35",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
     "iri" : "http://w3id.org/ioc#hasValue",
@@ -2075,7 +2075,7 @@
     "comment" : {
       "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "3"
   }, {
     "iri" : "http://w3id.org/ioc#hasSuccessor",
@@ -2097,27 +2097,27 @@
     "comment" : {
       "undefined" : "Logical Successor of a process. The process must be  finished for the sucessor to be ready."
     },
-    "attributes" : [ "transitive", "asymmetric", "object" ],
+    "attributes" : [ "object", "transitive", "asymmetric" ],
     "id" : "121"
   }, {
     "range" : "35",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
     "range" : "1",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "123"
   }, {
     "range" : "31",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "124"
   }, {
     "range" : "10",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
     "iri" : "http://w3id.org/ioc#hasElement",
@@ -2139,12 +2139,12 @@
     "comment" : {
       "undefined" : "Points to a version of an element grouping"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "126"
   }, {
     "range" : "10",
     "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
     "iri" : "http://w3id.org/ioc#hasResourceValue",
@@ -2190,7 +2190,7 @@
     "comment" : {
       "undefined" : "object property to link a specific version of an actor links to the process actor."
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "118"
   }, {
     "iri" : "http://w3id.org/ioc#hasParent",
@@ -2212,17 +2212,17 @@
     "comment" : {
       "undefined" : "Parent of a Process. A Process can at most have one parent."
     },
-    "attributes" : [ "transitive", "functional", "asymmetric", "object" ],
-    "id" : "49"
+    "attributes" : [ "object", "transitive", "functional", "asymmetric" ],
+    "id" : "47"
   }, {
     "range" : "31",
     "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "128"
   }, {
     "range" : "19",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "129"
   }, {
     "iri" : "http://w3id.org/ioc#hasProcessDataState",
@@ -2241,16 +2241,16 @@
       "undefined" : "hasProcessDataState"
     },
     "domain" : "19",
-    "subproperty" : [ "47", "46", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
+    "subproperty" : [ "48", "49", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
     "comment" : {
       "undefined" : "Generalized property to connect a process to a dynamic, version of its process data."
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "20"
   }, {
     "range" : "31",
     "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "133"
   }, {
     "iri" : "http://w3id.org/ioc#isReady",
@@ -2295,7 +2295,7 @@
     "comment" : {
       "undefined" : "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools."
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "120"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityValue",
@@ -2341,42 +2341,42 @@
     "comment" : {
       "undefined" : "Logical Predecessor of a process. Must be finished for the process to be ready."
     },
-    "attributes" : [ "transitive", "asymmetric", "object" ],
+    "attributes" : [ "object", "transitive", "asymmetric" ],
     "id" : "136"
   }, {
     "range" : "8",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "range" : "16",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "138"
   }, {
     "range" : "5",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "139"
   }, {
     "range" : "6",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "140"
   }, {
     "range" : "10",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "141"
   }, {
     "range" : "12",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "142"
   }, {
     "range" : "31",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "143"
   }, {
     "iri" : "http://w3id.org/ioc#hasMethodValue",
@@ -2404,7 +2404,7 @@
   }, {
     "range" : "8",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "144"
   }, {
     "iri" : "http://w3id.org/ioc#hasTargetSpace",
@@ -2427,17 +2427,17 @@
     "comment" : {
       "undefined" : "Property to add a version of an output space, thus defining the transformed location or space of the process"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "130"
   }, {
     "range" : "25",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "145"
   }, {
     "range" : "31",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "146"
   }, {
     "iri" : "http://w3id.org/ioc#hasLocation",
@@ -2459,7 +2459,7 @@
     "comment" : {
       "undefined" : "Property to connect a element, resource or spatial zone."
     },
-    "attributes" : [ "functional", "asymmetric", "object" ],
+    "attributes" : [ "object", "functional", "asymmetric" ],
     "id" : "147"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputElement",
@@ -2482,7 +2482,7 @@
     "comment" : {
       "undefined" : "Version of an element that the process has transformed"
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "132"
   }, {
     "iri" : "http://w3id.org/ioc#hasLocationValue",
@@ -2527,7 +2527,7 @@
     "comment" : {
       "undefined" : "The ioc:Actor that generated the information branch"
     },
-    "attributes" : [ "inverse functional", "object" ],
+    "attributes" : [ "object", "inverse functional" ],
     "id" : "148"
   }, {
     "iri" : "http://w3id.org/ioc#hasActor",
@@ -2550,12 +2550,12 @@
     "comment" : {
       "undefined" : "A responsible person or organization can be assigned to a process with the object property \"hasActor\" "
     },
-    "attributes" : [ "asymmetric", "object" ],
+    "attributes" : [ "object", "asymmetric" ],
     "id" : "131"
   }, {
     "range" : "16",
     "domain" : "135",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "149"
   } ]
 }
