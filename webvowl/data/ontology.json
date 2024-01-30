@@ -81,7 +81,7 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -159,7 +159,7 @@
     "id" : "96",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "55",
+    "id" : "54",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "16",
@@ -171,7 +171,7 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "135",
     "type" : "owl:Class"
   }, {
     "id" : "37",
@@ -306,7 +306,7 @@
       "undefined" : "Geometry of an element.Use https://w3id.org/fog# for Geometry Formats."
     },
     "attributes" : [ "external" ],
-    "id" : "53"
+    "id" : "55"
   }, {
     "iri" : "http://w3id.org/ioc#Schedule",
     "baseIri" : "http://w3id.org/ioc",
@@ -423,7 +423,7 @@
       "undefined" : "Information"
     },
     "comment" : {
-      "undefined" : "Structured Process Data. This class is meant to be a loose connection to other files and information containers."
+      "undefined" : "http://w3id.org/ioc#"
     },
     "id" : "8",
     "superClasses" : [ "35" ]
@@ -626,7 +626,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "54",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -646,7 +646,7 @@
       "IRI-based" : "Method",
       "undefined" : "Method"
     },
-    "subClasses" : [ "136" ],
+    "subClasses" : [ "135" ],
     "comment" : {
       "undefined" : "The Method that is used to perform the process described. Used as Interface to mor specific domain ontologies."
     },
@@ -714,7 +714,7 @@
       "undefined" : "CTO task method that is used in (L2) and (L3)"
     },
     "attributes" : [ "external" ],
-    "id" : "136",
+    "id" : "135",
     "superClasses" : [ "16" ]
   }, {
     "iri" : "https://w3id.org/bot#Element",
@@ -843,7 +843,7 @@
     "id" : "52",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "54",
+    "id" : "53",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "56",
@@ -987,10 +987,10 @@
     "id" : "114",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "3",
+    "id" : "115",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "121",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
     "id" : "122",
@@ -1011,13 +1011,13 @@
     "id" : "127",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "117",
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
     "type" : "owl:objectProperty"
   }, {
     "id" : "49",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "118",
     "type" : "owl:objectProperty"
   }, {
     "id" : "128",
@@ -1035,13 +1035,13 @@
     "id" : "134",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "120",
+    "id" : "121",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "116",
+    "id" : "117",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "135",
+    "id" : "136",
     "type" : "owl:objectProperty"
   }, {
     "id" : "137",
@@ -1065,7 +1065,7 @@
     "id" : "143",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "119",
+    "id" : "120",
     "type" : "owl:objectProperty"
   }, {
     "id" : "144",
@@ -1086,7 +1086,7 @@
     "id" : "132",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "115",
+    "id" : "116",
     "type" : "owl:objectProperty"
   }, {
     "id" : "148",
@@ -1192,7 +1192,7 @@
     "comment" : {
       "undefined" : "A boolean that describes if the process was canceled."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "11"
   }, {
     "range" : "12",
@@ -1290,7 +1290,7 @@
     "comment" : {
       "undefined" : "A boolean that describes if the process was started."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "27"
   }, {
     "range" : "16",
@@ -1332,7 +1332,7 @@
     "comment" : {
       "undefined" : "A boolean that describes if a ProcessDataState os considered valid trhough extra validation. WIP"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "39"
   }, {
     "iri" : "http://w3id.org/ioc#hasInputElementValue",
@@ -1377,7 +1377,7 @@
     "comment" : {
       "undefined" : "Duration of a Process Schedule"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "42"
   }, {
     "iri" : "http://www.w3.org/ns/prov#endedAtTime",
@@ -1399,7 +1399,7 @@
     "comment" : {
       "undefined" : "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "44"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputInformation",
@@ -1483,7 +1483,7 @@
   }, {
     "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "55",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1500,8 +1500,8 @@
     "comment" : {
       "undefined" : "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "54"
+    "attributes" : [ "datatype", "functional", "external" ],
+    "id" : "53"
   }, {
     "range" : "10",
     "domain" : "31",
@@ -1591,7 +1591,7 @@
   }, {
     "iri" : "https://w3id.org/omg#hasGeometry",
     "baseIri" : "https://w3id.org/omg",
-    "range" : "53",
+    "range" : "55",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1608,7 +1608,7 @@
     "comment" : {
       "undefined" : "Property for connecting geometries to elements, resources or spatial zones"
     },
-    "attributes" : [ "inverse functional", "object", "external" ],
+    "attributes" : [ "inverse functional", "external", "object" ],
     "id" : "74"
   }, {
     "iri" : "http://w3id.org/ioc#hasTargetSpaceValue",
@@ -1737,7 +1737,7 @@
     "comment" : {
       "undefined" : "A optional, internal process mark that can be used to add custom functionality to the process model"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "85"
   }, {
     "range" : "36",
@@ -1821,7 +1821,7 @@
     "comment" : {
       "undefined" : "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
+    "attributes" : [ "datatype", "functional", "external" ],
     "id" : "95"
   }, {
     "iri" : "http://w3id.org/ioc#isPaused",
@@ -1843,7 +1843,7 @@
     "comment" : {
       "undefined" : "A boolean that describes if the process is canceled."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "97"
   }, {
     "range" : "10",
@@ -2027,7 +2027,7 @@
     "comment" : {
       "undefined" : "A boolean that describes if the process was finished."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "109"
   }, {
     "range" : "35",
@@ -2055,29 +2055,6 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "114"
   }, {
-    "iri" : "http://w3id.org/ioc#hasValue",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "35",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "hasValue"
-    },
-    "domain" : "1",
-    "subproperty" : [ "0", "80", "7", "9", "115", "41", "116", "117", "118", "106", "119", "107", "83", "24", "120", "78" ],
-    "comment" : {
-      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
-    },
-    "attributes" : [ "functional", "object" ],
-    "id" : "3"
-  }, {
     "iri" : "http://w3id.org/ioc#hasSuccessor",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "19",
@@ -2098,7 +2075,30 @@
       "undefined" : "Logical Successor of a process. The process must be  finished for the sucessor to be ready."
     },
     "attributes" : [ "transitive", "asymmetric", "object" ],
-    "id" : "121"
+    "id" : "115"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "1",
+    "subproperty" : [ "0", "80", "7", "9", "116", "41", "117", "118", "119", "106", "120", "107", "83", "24", "121", "78" ],
+    "comment" : {
+      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "3"
   }, {
     "range" : "35",
     "domain" : "6",
@@ -2168,29 +2168,7 @@
       "undefined" : "Object property to link a  version of a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process, to instanciated class"
     },
     "attributes" : [ "object" ],
-    "id" : "117"
-  }, {
-    "iri" : "http://w3id.org/ioc#hasParent",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "19",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasParent",
-      "undefined" : "hasParent"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "Parent of a Process. A Process can at most have one parent."
-    },
-    "attributes" : [ "transitive", "functional", "asymmetric", "object" ],
-    "id" : "49"
+    "id" : "118"
   }, {
     "iri" : "http://w3id.org/ioc#hasActorValue",
     "baseIri" : "http://w3id.org/ioc",
@@ -2213,7 +2191,29 @@
       "undefined" : "object property to link a specific version of an actor links to the process actor."
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "118"
+    "id" : "119"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasParent",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParent",
+      "undefined" : "hasParent"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Parent of a Process. A Process can at most have one parent."
+    },
+    "attributes" : [ "transitive", "functional", "asymmetric", "object" ],
+    "id" : "49"
   }, {
     "range" : "31",
     "domain" : "36",
@@ -2272,7 +2272,7 @@
     "comment" : {
       "undefined" : "A boolean that describes if the process is ready to start."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "134"
   }, {
     "iri" : "http://w3id.org/ioc#hasStatusValue",
@@ -2296,7 +2296,7 @@
       "undefined" : "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools."
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "120"
+    "id" : "121"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityValue",
     "baseIri" : "http://w3id.org/ioc",
@@ -2319,10 +2319,10 @@
       "undefined" : "object property to link a specific version of an capability of a resource  to one or more capabilities"
     },
     "attributes" : [ "object" ],
-    "id" : "116"
+    "id" : "117"
   }, {
     "iri" : "http://w3id.org/ioc#hasPredecessor",
-    "inverse" : "121",
+    "inverse" : "115",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "19",
     "annotations" : {
@@ -2342,7 +2342,7 @@
       "undefined" : "Logical Predecessor of a process. Must be finished for the process to be ready."
     },
     "attributes" : [ "transitive", "asymmetric", "object" ],
-    "id" : "135"
+    "id" : "136"
   }, {
     "range" : "8",
     "domain" : "68",
@@ -2400,7 +2400,7 @@
       "undefined" : "object property to link a specific version of a method  to one or more instanciated Methods"
     },
     "attributes" : [ "object" ],
-    "id" : "119"
+    "id" : "120"
   }, {
     "range" : "8",
     "domain" : "25",
@@ -2506,7 +2506,7 @@
       "undefined" : "object property to link a specific version of a location  to one or more location instances"
     },
     "attributes" : [ "object" ],
-    "id" : "115"
+    "id" : "116"
   }, {
     "iri" : "http://w3id.org/ioc#generatedByActor",
     "baseIri" : "http://w3id.org/ioc",
@@ -2554,7 +2554,7 @@
     "id" : "131"
   }, {
     "range" : "16",
-    "domain" : "136",
+    "domain" : "135",
     "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   } ]

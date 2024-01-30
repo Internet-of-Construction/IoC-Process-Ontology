@@ -1,4 +1,181 @@
-<h2 id="desc" class="list">Internet of Construction Process Ontology (ioc): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a test if the description is placed where it should belong. Lets hope for the best.</span>
+<h2 id="desc" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h3 id="focus" class="list">Focus <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
 
+<p>To create this ontology, we followed the methodology described in "Ontology Development 101: A Guide to Creating Your First Ontology" by Natalya F. Noy and Deborah L. McGuinness <a
+	href="https://protege.stanford.edu/publications/ontology_development/ontology101.pdf" data-reference-type="autoref"
+	data-reference="NoyandDeborahL">[1]</a>. According to this guide, the first step
+of ontology development is to clarify the focus of the ontology. For
+this purpose, three questions are defined, which will be answered in the
+following:</p>
+<ul>
+<li><p><strong>Which domain should be covered by the
+ontology?</strong></p></li>
+</ul>
+<p>The IoC Process Ontology should be able to cover the value chains of
+the construction industry as comprehensively as possible. This includes
+not only the design and construction phases, but also processes in all
+phases of a structure’s lifecycle.</p>
+<ul>
+<li><p><strong>For what purpose should the ontology be
+used?</strong></p></li>
+</ul>
+<p>The goal of the IoC Process Ontology is the valid description of
+processes in the construction industry. This includes all types of
+construction processes such as execution, planning, production,
+logistics, and assembly processes. To achieve this, it is essential to
+interrelate the processes and contextualize them with time and location
+information. The IoC Construction Process Ontology serves as a top-level
+ontology and enables the linking of more specific and detailed domain
+ontologies. The modeled and mappable processes aim to digitalize and
+optimize the construction industry information flow and encourage the
+use of innovative AI and construction robotics solutions.</p>
+<ul>
+<li><p><strong>For what kind of questions should ontology be able to
+provide answers?</strong></p></li>
+</ul>
+<p>The IoC Process Ontology should be able to answer questions about the
+nature of a process, its dependencies and its status. This should enable
+simple interrelationships to be queried for roughly modeled processes,
+and complex and detailed answers to be provided for use in process
+control after further data input and with the inclusion of process data
+feedback.
+</p>
+</br>
+
+<h3 id="competencyQuestions" class="list">Competency questions <span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<p>
+Competency questions are technical-functional in nature and describe
+what queries should be able to answer precisly once the ontology has
+been created. Therefore, they serve as the primary ontology development
+procedure as they can be evaluated unambiguously. <a href="#tab:06"
+data-reference-type="autoref" data-reference="tab:06">Table 2</a> lists
+the most relevant competency questions used in the development
+process.
+</p>
+<div id="tab:06" align="center">
+<table>
+<caption> <a href="#tab:06"> Table 2</a>: Overview of the defined copmtency questions (CQ) </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Area</strong></th>
+<th style="text-align: left;"><strong>No.</strong></th>
+<th style="text-align: left;"><strong>Competency question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Process (Metadata)</td>
+<td style="text-align: left;">CQ1</td>
+<td style="text-align: left;">What is the name of the process?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Process (Sequence)</td>
+<td style="text-align: left;">CQ2</td>
+<td style="text-align: left;">Which processes come before / after the
+process?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Element</td>
+<td style="text-align: left;">CQ3</td>
+<td style="text-align: left;">Which element is generated or transformed
+by the process?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Actor / Organization</td>
+<td style="text-align: left;">CQ4</td>
+<td style="text-align: left;">Who is responsible for the process?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Space / location / Zone</td>
+<td style="text-align: left;">CQ5</td>
+<td style="text-align: left;">Where is the process executed?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Schedule</td>
+<td style="text-align: left;">CQ6</td>
+<td style="text-align: left;">When is it planned that the process is
+executed?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Schedule / Status</td>
+<td style="text-align: left;">CQ7</td>
+<td style="text-align: left;">When did the process take place?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Method</td>
+<td style="text-align: left;">CQ8</td>
+<td style="text-align: left;">How do I need to run the process?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Resource)</td>
+<td style="text-align: left;">CQ9</td>
+<td style="text-align: left;">Which resources are necessary for the
+execution?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">CQ10</td>
+<td style="text-align: left;">What is the current status of the
+process?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Constraint</td>
+<td style="text-align: left;">CQ11</td>
+<td style="text-align: left;">What conditions must be met for the status
+of the process to be changed?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">All &amp; Status</td>
+<td style="text-align: left;">CQ12</td>
+<td style="text-align: left;">How was the process executed?
+(Documentation)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
+</br>	
+The formulated competency questions are used as a basis to work out
+which areas of the ontology need to be covered by concepts and
+relations, and which functionalities need to be enabled by the ontology.
+The areas mentioned in <a href="#tab:06" data-reference-type="autoref"
+data-reference="tab:06">Table 2</a> indicate roughly the necessary
+concepts of the ontology. Competency questions can also be used as a basis for evaluation. Within the
+scope of the Internet of Construction research project, the evaluation of the IoC Process Ontology was of
+great importance. Therefore, the ontology was extensively tested and
+further developed on the basis of practical implementations at the
+reference construction site of the RWTH Aachen University.
+</p>
+</br>
+
+<h3 id="sec:basics" class="list">Basic structure and concepts<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<p>The center of the IoC Process Ontology is the generic concept of the
+<strong>process</strong>. The process is followed by the higher-level
+concepts of the generic process modeling. The concepts correspond to the
+domains that were developed using the competency Questions.
+They are <em>process actor, process element, process
+information, process method, process resource, process space,</em> and
+<em>process status</em>. Concepts that can undergo a transformation by
+executing the process distinguish by relations (object property) between
+input and output concepts. An overview is depicted in <a
+href="#fig:Abbildung03_11_2" data-reference-type="autoref"
+data-reference="fig:Abbildung03_11_2">Figure 1</a>.</p>
+<div align="center">
+    <figure id="fig:Abbildung03_11_2">
+        <img src="resources/Abbildung03_11_2.png" width="70%" />
+        <figcaption>Figure 1: Formalized process description using the IoC Process Ontology.</figcaption>
+    </figure>
+</div>
+
+<p>The generic concepts of the IoC Process Ontology (ioc) do not contain
+any taxonomic process classification. This is in order to achieve
+independence from individual construction-related domains as well as
+from international and national regulations and guidelines. All
+concepts, regardless of the level of detail, can be provided with
+metadata using concepts from PROV-O and SCHEMA, which are dynamically
+used for versioning and evaluation. The main concepts and their
+sub-concepts are described below.</p>
+
+</div>
+</body>
+</html>
