@@ -37,6 +37,16 @@ jobs:
           mkdir -p public/sections
           cp description-en.html public/sections/description-en.html
 
+      - name: Copy introduction-en.html to /public/sections
+        run: |
+          mkdir -p public/sections
+          cp introduction-en.html public/sections/introduction-en.html
+
+      - name: Copy pictures to /public/resources
+        run: |
+          mkdir -p public/resources
+          cp /images/Abbildung03_11_2.png public/resources/Abbildung03_11_2.png
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
