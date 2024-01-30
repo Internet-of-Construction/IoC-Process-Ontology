@@ -37,3 +37,22 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
+
+    - name: Copy description-en.html to gh-pages branch
+      run: |
+        # Fetch gh-pages branch and switch to it
+        git fetch origin gh-pages
+        git checkout gh-pages
+        # Make sure the sections directory exists
+        mkdir -p sections
+        # Copy the file from main branch to current directory in gh-pages branch
+        git checkout main description-en.html
+        mv description-en.html sections/
+        # Check if there are changes. If so, commit and push.
+        if [[ `git status --porcelain` ]]; then
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add sections/description-en.html
+          git commit -m "Update description-en.html"
+          git push origin gh-pages
+        fi
