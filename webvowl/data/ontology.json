@@ -834,7 +834,7 @@
     "id" : "47",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
     "id" : "50",
@@ -987,10 +987,10 @@
     "id" : "114",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "115",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "3",
+    "id" : "121",
     "type" : "owl:objectProperty"
   }, {
     "id" : "122",
@@ -1011,13 +1011,13 @@
     "id" : "127",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "118",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "119",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "48",
+    "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "128",
@@ -1035,10 +1035,10 @@
     "id" : "134",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "121",
+    "id" : "120",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "117",
+    "id" : "116",
     "type" : "owl:objectProperty"
   }, {
     "id" : "136",
@@ -1065,7 +1065,7 @@
     "id" : "143",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "120",
+    "id" : "119",
     "type" : "owl:objectProperty"
   }, {
     "id" : "144",
@@ -1086,7 +1086,7 @@
     "id" : "132",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "116",
+    "id" : "115",
     "type" : "owl:objectProperty"
   }, {
     "id" : "148",
@@ -1425,29 +1425,6 @@
     "attributes" : [ "asymmetric", "object" ],
     "id" : "46"
   }, {
-    "iri" : "http://w3id.org/ioc#hasChild",
-    "inverse" : "48",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "19",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasChild",
-      "undefined" : "hasChild"
-    },
-    "domain" : "19",
-    "comment" : {
-      "undefined" : "Child process of a process. A process can have a undeifned number of children"
-    },
-    "attributes" : [ "transitive", "inverse functional", "asymmetric", "object" ],
-    "id" : "47"
-  }, {
     "iri" : "http://w3id.org/ioc#hasOutputInformation",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "1",
@@ -1469,7 +1446,30 @@
       "undefined" : "Property for connecting a version of a piece of information or a infromation container to a process which was transformed by the process"
     },
     "attributes" : [ "asymmetric", "object" ],
-    "id" : "49"
+    "id" : "47"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasChild",
+    "inverse" : "49",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "19",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasChild",
+      "undefined" : "hasChild"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Child process of a process. A process can have a undeifned number of children"
+    },
+    "attributes" : [ "transitive", "inverse functional", "asymmetric", "object" ],
+    "id" : "48"
   }, {
     "range" : "6",
     "domain" : "31",
@@ -2055,6 +2055,29 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "114"
   }, {
+    "iri" : "http://w3id.org/ioc#hasValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "1",
+    "subproperty" : [ "0", "80", "7", "9", "115", "41", "116", "117", "118", "106", "119", "107", "83", "24", "120", "78" ],
+    "comment" : {
+      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "3"
+  }, {
     "iri" : "http://w3id.org/ioc#hasSuccessor",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "19",
@@ -2075,30 +2098,7 @@
       "undefined" : "Logical Successor of a process. The process must be  finished for the sucessor to be ready."
     },
     "attributes" : [ "transitive", "asymmetric", "object" ],
-    "id" : "115"
-  }, {
-    "iri" : "http://w3id.org/ioc#hasValue",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "35",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "hasValue"
-    },
-    "domain" : "1",
-    "subproperty" : [ "0", "80", "7", "9", "116", "41", "117", "118", "119", "106", "120", "107", "83", "24", "121", "78" ],
-    "comment" : {
-      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
-    },
-    "attributes" : [ "functional", "object" ],
-    "id" : "3"
+    "id" : "121"
   }, {
     "range" : "35",
     "domain" : "10",
@@ -2168,7 +2168,7 @@
       "undefined" : "Object property to link a  version of a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process, to instanciated class"
     },
     "attributes" : [ "object" ],
-    "id" : "118"
+    "id" : "117"
   }, {
     "iri" : "http://w3id.org/ioc#hasActorValue",
     "baseIri" : "http://w3id.org/ioc",
@@ -2191,7 +2191,7 @@
       "undefined" : "object property to link a specific version of an actor links to the process actor."
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "119"
+    "id" : "118"
   }, {
     "iri" : "http://w3id.org/ioc#hasParent",
     "baseIri" : "http://w3id.org/ioc",
@@ -2213,7 +2213,7 @@
       "undefined" : "Parent of a Process. A Process can at most have one parent."
     },
     "attributes" : [ "transitive", "functional", "asymmetric", "object" ],
-    "id" : "48"
+    "id" : "49"
   }, {
     "range" : "31",
     "domain" : "36",
@@ -2241,7 +2241,7 @@
       "undefined" : "hasProcessDataState"
     },
     "domain" : "19",
-    "subproperty" : [ "49", "46", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
+    "subproperty" : [ "47", "46", "130", "108", "103", "18", "70", "131", "71", "104", "82", "132" ],
     "comment" : {
       "undefined" : "Generalized property to connect a process to a dynamic, version of its process data."
     },
@@ -2296,7 +2296,7 @@
       "undefined" : "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools."
     },
     "attributes" : [ "functional", "object" ],
-    "id" : "121"
+    "id" : "120"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityValue",
     "baseIri" : "http://w3id.org/ioc",
@@ -2319,10 +2319,10 @@
       "undefined" : "object property to link a specific version of an capability of a resource  to one or more capabilities"
     },
     "attributes" : [ "object" ],
-    "id" : "117"
+    "id" : "116"
   }, {
     "iri" : "http://w3id.org/ioc#hasPredecessor",
-    "inverse" : "115",
+    "inverse" : "121",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "19",
     "annotations" : {
@@ -2400,7 +2400,7 @@
       "undefined" : "object property to link a specific version of a method  to one or more instanciated Methods"
     },
     "attributes" : [ "object" ],
-    "id" : "120"
+    "id" : "119"
   }, {
     "range" : "8",
     "domain" : "25",
@@ -2506,7 +2506,7 @@
       "undefined" : "object property to link a specific version of a location  to one or more location instances"
     },
     "attributes" : [ "object" ],
-    "id" : "116"
+    "id" : "115"
   }, {
     "iri" : "http://w3id.org/ioc#generatedByActor",
     "baseIri" : "http://w3id.org/ioc",
