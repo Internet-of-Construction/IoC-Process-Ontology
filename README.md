@@ -18,9 +18,9 @@ This project is released under the Creative Commons Attribution 2.0 Internationa
   month        = jan,
   year         = 2024,
   publisher    = {Zenodo},
-  version      = {null},
-  doi          = {doi},
-  url          = {https://doi.org/null}
+  version      = {0.5},
+  doi          = {10.5281/zenodo.10592282},
+  url          = {https://zenodo.org/doi/10.5281/zenodo.10592282}
 }
 ```
 
