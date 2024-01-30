@@ -168,14 +168,323 @@ data-reference="fig:Abbildung03_11_2">Figure 1</a>.</p>
 </div>
 
 <p>The generic concepts of the IoC Process Ontology (ioc) do not contain
-any taxonomic process classification. This is in order to achieve
-independence from individual construction-related domains as well as
-from international and national regulations and guidelines. All
-concepts, regardless of the level of detail, can be provided with
-metadata using concepts from PROV-O and SCHEMA, which are dynamically
-used for versioning and evaluation. The main concepts and their
-sub-concepts are described below.</p>
-
-</div>
-</body>
-</html>
+    any taxonomic process classification. This is in order to achieve
+    independence from individual construction-related domains as well as
+    from international and national regulations and guidelines. All
+    concepts, regardless of the level of detail, can be provided with
+    metadata using concepts from PROV-O and SCHEMA, which are dynamically
+    used for versioning and evaluation. The main concepts and their
+    sub-concepts are described below.</p>
+    
+    
+    </br>
+    
+    <h3 id="exemplary-modeling" class="list">Exemplary modeling<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+    <h4 id="modeling-of-a-common-superprocess">Modeling of a common
+      parent process</h4>
+    
+      <div style="text-align: center;">
+        <caption> <a href="#code:32"> Listing 1</a>: The modeled parent process "create steel truss #2000-01 </caption>
+        <div style="display: inline-block; text-align: left; width: 70%;">
+          <pre>
+            <code>
+        1   @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+        2   @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt; .
+        3   @prefix ioc: &lt;http://w3id.org/ioc#&gt; .
+        4   @prefix inst: &lt;https://rob.arch.rwth-aachen.de/ioc#&gt; .
+        5
+        6   ioc:Process_Stahlbinder-201 a ioc:Process ;
+        7       rdfs:label "Stahlbinder #2000-01 erstellen" ;
+        8       ioc:hasChild inst:Process_Stahlbinder201_HUB , inst:Process_Stahlbinder201_Endm;
+        9       ioc:hasPredecessor inst:Process_STB_U1 , inst:Process_STB_U2 ;
+        10      ioc:hasSuccessor inst:Process_Holzbinder112 ;
+        11      ioc:hasOutputElement inst:Stahlbinder_full_1488cf12c2-7f24 ;
+        12      ioc:hasActor inst:StahlbaufirmaX ;
+        13      ioc:hasSchedule inst:ProcessSchedule_e79682c0-da85-5b86-84bc-5e7c5907dc5b ;
+        14      ioc:hasStatus inst:ProcessStatus_e79682c0-da85-5b86-84bc-5e7c5907dc5b .
+            </code>
+          </pre>
+        </div>
+      </div>
+      
+    
+    <p><a href="#code:32" data-reference-type="autoref"
+    data-reference="#code:32">Listing 1</a> shows an excerpt from a
+    process model that was modeled and used within the IoC. Lines 1-4 define
+    the used prefixes of the connected ontologies, which can then be
+    abbreviated in the further lines. The actual process is defined in lines
+    6-14. It is instantiated in line 6 with the IRI ioc:Process
+    Stahlbinder-201. Usually the IRI is generated with the help of a GUID,
+    so that uniqueness can be guaranteed. In the example given, this was not
+    done for readability reasons. The process is classified by as
+    <em>ioc:Process</em>. In this case <em>a</em> is used as short form of
+    <em>rdf:type</em>. This can be used to answer competency question 2
+    (CQ2) (see <a href="competencyQuestions"
+    data-reference-type="autoref"
+    data-reference="competencyQuestions">competency Questions</a>)
+    about the class of the process. In the following, the abbreviations of
+    the competence questions are given for further explanation of the
+    example.</p>
+    Line 7 shows the name of the process (CQ1). Lines 8-10 describe the
+    subprocesses of the process, as well as predecessors and successors. It
+    can be seen that the process has 3 direct predecessors. These are the
+    creation processes for 2 reinforced concrete components as supports for
+    the steel truss and the final assembly of the steel truss as the last
+    modeled process of the subprocess chain. Lines 8-10 form the minimum
+    substructure necessary for logical modeling of the process sequence.
+    Line 11 describes the element that is created by the process (CQ3).
+    In this case, it is a group of elements, since the steel truss consists
+    of several subassemblies . The absence of a <em>hasInputElement</em>
+    connection shows that in the present process a component is newly
+    created and not just transformed or modified.
+    Line 12 shows that a responsible person has been added to the process
+    (CQ4). This connection makes it particularly easy to filter processes in
+    order to display only processes relevant to the actor and possibly their
+    predecessor processes.
+    Line 13 contains the link to a process schedule (CQ6). Here, for
+    example, a deadline can be defined as the end time, or, if the planning
+    does not yet allow it, only an expected process duration can be
+    defined.
+    The status of the process is linked in line 14 (CQ10). In the first
+    possible state of the process, the planned state, it must be possible to
+    infer from the status that the process is neither ready to start,
+    started, finishedor terminated. In case of status change, another
+    process status with a current timestamp is appended. From the fact that
+    the process shown in <a href="#code:32" data-reference-type="autoref"
+      data-reference="#code:32">Listing 1</a> has only one process status,
+    it can be concluded that it is the initial planned (as-Planned) process
+    status. <a
+    href="#fig:Abbildung03_21" data-reference-type="autoref"
+    data-reference="fig:Abbildung03_21">Figure 2</a> shows an
+    example of how different patterns can be formed to map a process
+    status.</p>
+    
+    
+    <div align="center">
+        <figure id="fig:Abbildung03_21">
+            <img src="resources/Abbildung03_21.png" width="70%" />
+            <figcaption>Figure 2: Exemplary use of the basic form of the <em>ioc:Status</em>
+              Concept.</figcaption>
+        </figure>
+    </div>
+    
+    <p>In this case, there are three statuses, each representing a different
+    state. Patterns of booleans and timestamps can be used to record the
+    progress. However, <strong>following Revision 0.4, this simplified method is deprecated and should be replaced as described in Section 3.5</strong>.
+    In the example from <a href="#fig:Abbildung03_21"
+    data-reference-type="autoref"
+    data-reference="fig:Abbildung03_21">Figure 2</a>, it can be
+    read that on 20.11.2022 at 10:00 AM, the prerequisites for the start of the
+    process were met and it was thus marked as ready. From the other
+    statuses, it can be concluded that the process was started 15 minutes
+    later and lasted one hour until it was marked as completed (CQ7).</p>
+    <p>Schedule and status, especially in combination, can provide important
+    information that can be used, for example, for construction
+    documentation and optimization. After a process has been completed, it
+    can be recorded whether the planned end time was adhered to or whether
+    the expected process duration applies. This derived information can be
+    related to other process information to identify patterns. In this way,
+    it can be analyzed whether processes that particularly often lead to
+    deviation are part of certain process chains or are executed with
+    certain machines.</p>
+    </br>
+    
+    <h4 id="modeling-of-a-common-subprocess">Modeling of a common
+    subprocess</h4>
+    <p>  For the creation of superprocesses, the information depth shown in
+    <a href="#code:32" data-reference-type="autoref"
+    data-reference="#code:32">Listing 1</a> is sufficient to make the
+    necessary information available in a common construction process. For a
+    <em>ioc:Process</em> in a fashion of a subprocess, significantly more
+    information depth may be necessary for practical use. Such a subprocess
+    of the generic process <em>Create steel truss #2000-01</em> is the
+    lifting process <em>Lift in steel truss #2000-01</em>. The process is
+    shown in Table <a href="#code:33" data-reference-type="autoref"
+    data-reference="#code:33">Listing 2</a>.</p>
+    
+    
+    <div style="text-align: center;">
+      <caption> <a href="#code:33"> Listing 2</a>: The modeled child process "Stahlbinder #2000-01 einheben </caption>
+      <div style="display: inline-block; text-align: left; width: 70%;">
+        <pre>
+          <code>
+    1   @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+    2   @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt; .
+    3   @prefix ioc: &lt;http://w3id.org/ioc#&gt; .
+    4   @prefix inst: &lt;https://rob.arch.rwth-aachen.de/ioc#&gt; .
+    5
+    6    inst:Process_Stahlbinder201_HUB a ioc:Process ;
+    7        rdfs:label "Stahlbinder #2000-01 einheben" ;
+    8        ioc:hasParentProcess inst:Process_Stahlbinder-201 ;
+    9        ioc:hasPredecessor inst:Process_Stahlbinder201_verbinden ;
+    10       ioc:hasSuccessor inst:Process_Stahlbinder201_Endm ;
+    11       ioc:hasInputElement inst:Stahlbinder_full_1488cf12c2-7f24&gt; ;
+    12       ioc:hasOutputElement inst:Stahlbinder_full_1488cf12c2-7f24&gt; ;
+    13       ioc:hasInitialSpace inst:iocloc_zone_Fundament_TinyHouse ;
+    14       ioc:hasTargetSpace inst:iocloc_zone_Installation_Area ;
+    15       ioc:hasMethod inst:Method_1854bg5-df548-66s4-987uiozs86dnc ;
+    16       ioc:hasActor inst:StahlbaufirmaX ;
+    17       ioc:hasRessource inst:Ressource_C_L1-24 ;
+    18       ioc:hasStatus inst:ProcessStatus_196fc34e-b451-551b-84e0-368de1df021 .
+          </code>
+        </pre>
+      </div>
+    </div>
+    
+    <p>Compared to the parent process, it is noticeable here that the
+    process contains an input and an output connection to the same instance
+    of an element (lines 11-12). This logic describes in the data model that
+    the element is required as a prerequisite for the process and remains
+    unchanged. On the other hand, lines 13-14 indicate the original and the
+    post-process resulting location of the process, which are different. In
+    this case, the component was lifted from the storage area, a temporary
+    foundation area of a TinyHouse to the final location of the component
+    (CQ5). The data pattern of two different process locations can be
+    interpreted as a logistics process where something was moved between two
+    locations. The current location of a component was determined in IoC
+    using process chaining. For example, a query can be used to determine
+    the last process started that linked the component to a location. In the
+    example, this can also be a process such as Storage, which is linked to
+    a location and a status and can also provide easily retrievable
+    information about where a component has been and for how long.
+    Line 15 describes the method associated with the process (CQ8). This
+    is primarily required for so-called capability matching which describes the matching of capability requirements imposed by a
+    process with the capabilities provided by a resource. For example, a
+    lifting process might have the capability lift associated with a range
+    of values at tonnage values (e.g., lift: 0-3 tons). The method in this
+    case would be lift. Methods are closely related to the description of
+    resources. In line 17, the link to a resource is modeled (CQ9). In this case, it
+    is the digital representation of a tower crane. Especially for
+    resources, the linking of domain ontologies lends itself. For example, a
+    version of the construction equipment list modeled with the help of an
+    ontology would be conceivable. All this linked data can be used to model the processes and, after
+    they have been executed, to present them in documentation (CQ12), which
+    can be used for optimization, for example. Figure 23 shows a schematic
+    representation of the two processes where the blue circle and orange
+    circle represent the parent and the sub- or childprocess.</p>
+    
+    </br>
+    <h3 id="Dynamicapproaches" class="list">Dynamic process data approaches<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+    
+    <p>In the original version of the IoC Process Ontology developed and
+    thoroughly tested in the IoC research project, dynamic features were
+    only intended to be used with the concepts <em>ioc:Schedule</em> and
+    <em>ioc:Status</em>. This helped to keep the ontology simple, but also
+    led to issues in querying and limitations in describing planning history
+    and change management. For example, especially as the number of forks
+    for status grows, SPARQL queries looking for the most recent value
+    become increasingly slow.</p>
+    <p>A solution to this problem in the adjacent field of modeling dynamic
+    building property values was presented by Rassmussen et al. in the form
+    of the OPM ontology <a
+    href="https://www.researchgate.net/publication/326930517_OPM_An_ontology_for_describing_properties_that_evolve_over_time" data-reference-type="autoref"
+    data-reference="OPM">[2]</a>. In essence, the ontology
+    introduces a class called <em>opm:CurrentPropertyState</em>, which is
+    assigned only to the most recently defined instance of a property state.
+    Queries that use this concept are much more efficient than queries that
+    compare data timestamps and search for the most recent.</p>
+    <p>This solution was adapted for the IoC Process Ontology with
+    introducing the intermediate class <em>ioc:ProcessDataState</em> as well
+    as a supcerclass for the existing concepts like <em>ioc:Actor,
+    ioc:Method, ioc:Status</em> and so on. They are connected from
+    <em>ioc:Process</em> with subproperties of
+    <em>ioc:hasProcessDataState</em> and <em>ioc:hasValue</em>. A direct
+    comparison between the original and the advanced approach can be drawn
+    from <a href="#code:33" data-reference-type="autoref"
+    data-reference="#code:33">Listing 3</a> and <a href="#code:34" data-reference-type="autoref"
+    data-reference="#code:35">Listing 4</a>. Here the main change can be
+    seen in <a href="#code:34" data-reference-type="autoref"
+    data-reference="#code:35">Listing 4</a>, lines 10-12. The timestamp
+    moved from the <em>ioc:Status</em> class to the datastate, as well as
+    the current datastate is specified.
+    
+    <div style="text-align: center;">
+      <caption> <a href="#code:33"> Listing 3</a>: A process modeled with the original, simple structure </caption>
+      <div style="display: inline-block; text-align: left; width: 70%;">
+        <pre>
+          <code>
+    1   @prefix ioc: &lt;http://w3id.org/ioc#&gt; .
+    2   @prefix inst: &lt;https://rob.arch.rwth-aachen.de/ioc#&gt; .
+    3   @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt; .
+    4   @prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+    5   @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+    6
+    7   inst:exampleProcess a ioc:Process;
+    8       ioc:hasStatus inst:exampleStatus_01, inst:exampleStatus_02.
+    9
+    10  inst:exampleStatus_02 prov:generatedAtTime "2023-08-20T10:00:00"^^xsd:dateTime;
+    11      ioc:isReady "false"^^xsd:boolean;
+    12      ioc:isStarted "false"^^xsd:boolean;
+    13      ioc:isFinished "false"^^xsd:boolean;
+    14      ioc:isCancelled "false"^^xsd:boolean.
+          </code>
+        </pre>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <caption> <a href="#code:34"> Listing 4</a>: A process modeled with the enhanced dynamic approach. </caption>
+      <div style="display: inline-block; text-align: left; width: 70%;">
+        <pre>
+          <code>
+      1   @prefix inst: &lt;https://rob.arch.rwth-aachen.de/ioc#&gt; .
+      2   @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt; .
+      3   @prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+      4   @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+      5
+      6   inst:exampleProcess a ioc:Process;
+      7       ioc:hasStatus inst:exampleStatusState_01, inst:exampleStatusState_02.
+      8
+      9   inst:exampleStatusState_02 a ioc:CurrentProcessDataState;
+     10       prov:generatedAtTime "2023-08-20T10:00:00"^^xsd:dateTime;
+     11       ioc:hasStatusvalue inst:exampleStatusValue_02.
+     12
+     13   inst:exampleStatusValue_02 a ioc:Status;
+     14       ioc:isReady "false"^^xsd:boolean;
+     15       ioc:isStarted "false"^^xsd:boolean;
+     16       ioc:isFinished "false"^^xsd:boolean;
+     17       ioc:isCancelled "false"^^xsd:boolean.
+          </code>
+        </pre>
+      </div>
+    </div>
+    </br>
+    
+    <p>While the readability suffered, the approach offers three relevant
+    advantages:</p>
+    <ol>
+    <li><p>The current state can be queried with the existence of the
+    <em>CurrentProcessDataState</em> class, which is much fast to comparing
+    timestamps against each others.</p></li>
+    <li><p>Additional meta-information like the author of the information
+    can be added to the construct. Beforehand, it was inambigious especially
+    when confusing the author of the data with the actor fo the
+    process.</p></li>
+    <li><p>The restrictions modeled in the ontology persist or can be
+    described more precise no matter the number of versions
+    declared.</p></li>
+    </ol>
+    
+    <p>To further explain the third advantage, the example of a process
+    status is again used. Whereas a process can have many different linked
+    status depending on its history, the enhanced dynamic approach offers to
+    restrict the number of valid (current) values. A Restriction necessarily assigns maximum one current state. For this state, it can be further restricted that it always describes exactly one status. 
+    This improved level of detail in restriction helps implementing more advanced reasoning approaches.
+    </p>
+    <div style="text-align: center;">
+      <span class="math display"><em>P</em><em>r</em><em>o</em><em>c</em><em>e</em><em>s</em><em>s</em> ⊑ ≥ 1 <em>h</em><em>a</em><em>s</em><em>S</em><em>t</em><em>a</em><em>t</em><em>u</em><em>s</em>.<em>C</em><em>u</em><em>r</em><em>r</em><em>e</em><em>n</em><em>t</em><em>P</em><em>r</em><em>o</em><em>c</em><em>e</em><em>s</em><em>s</em><em>D</em><em>a</em><em>t</em><em>a</em><em>S</em><em>t</em><em>a</em><em>t</em><em>e</em> </span>
+    </div>
+    <div style="text-align: center;">
+      <span class="math display"><em>C</em><em>u</em><em>r</em><em>r</em><em>e</em><em>n</em><em>t</em><em>P</em><em>r</em><em>o</em><em>c</em><em>e</em><em>s</em><em>s</em><em>D</em><em>a</em><em>t</em><em>a</em><em>S</em><em>t</em><em>a</em><em>t</em><em>e</em> ⊑ = 1 <em>h</em><em>a</em><em>s</em><em>S</em><em>t</em><em>a</em><em>t</em><em>u</em><em>s</em><em>V</em><em>a</em><em>l</em><em>u</em><em>e</em>.<em>S</em><em>t</em><em>a</em><em>t</em><em>u</em><em>s</em> </span>
+    </div>
+    
+    <p>Another approach for enabling dynamic process data and addition of
+    metadata is the implementation of <em>RDF-star</em> (RDF*). RDF* extends
+    RDF to enable making statements about other statements and therefore
+    adding metadata. RDF* improves readability greatly, and is actively developed further.
+    However not all triple-stores support this standard, and in contrast to
+    the enhanced, OPM-like technique shown presented here, there is no option known to the authors of
+    formalizing the statements in the ontology itself.
+    
+    
+    
