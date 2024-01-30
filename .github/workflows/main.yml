@@ -40,19 +40,28 @@ jobs:
 
     - name: Copy description-en.html to gh-pages branch
       run: |
-        # Fetch gh-pages branch and switch to it
-        git fetch origin gh-pages
-        git checkout gh-pages
-        # Make sure the sections directory exists
-        mkdir -p sections
-        # Copy the file from main branch to current directory in gh-pages branch
-        git checkout main description-en.html
-        mv description-en.html sections/
-        # Check if there are changes. If so, commit and push.
-        if [[ `git status --porcelain` ]]; then
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add sections/description-en.html
-          git commit -m "Update description-en.html"
-          git push origin gh-pages
+        # Configure git
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        
+        # Fetch all branches
+        git fetch --all
+        
+        # Check if gh-pages branch exists and checkout, else create new gh-pages branch from main
+        if git show-ref --quiet refs/heads/gh-pages; then
+          git checkout gh-pages
+        else
+          git checkout -b gh-pages
         fi
+        
+        # Ensure the sections directory exists
+        mkdir -p sections
+        
+        # Copy the file from the 'main' branch to the 'sections' directory in the 'gh-pages' branch
+        git restore --source=main -- description-en.html
+        mv description-en.html sections/
+        
+        # Add, commit, and push changes
+        git add sections/description-en.html
+        git commit -m "Update description-en.html" || echo "No changes to commit"
+        git push origin gh-pages || echo "Push failed, check permissions and branch protection rules"

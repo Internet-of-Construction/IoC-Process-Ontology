@@ -8,7 +8,7 @@ The Internet of Construction Process Ontology (ioc) is a top-level ontology for 
 This repository is managed by Lukas Kirner (kirner@ip.rwth-aachen.de)
 
 ## License
-This project is released under the Creative Commons Attribution 2.0 International lisence. 
+This project is released under the Creative Commons Attribution 2.0 International licence. 
 
 ## How to cite
 ```
