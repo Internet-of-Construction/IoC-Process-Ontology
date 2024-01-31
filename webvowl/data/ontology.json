@@ -81,7 +81,7 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
     "id" : "6",
@@ -105,10 +105,10 @@
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "67",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
     "id" : "69",
@@ -138,10 +138,10 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
     "id" : "68",
@@ -156,10 +156,10 @@
     "id" : "40",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "96",
+    "id" : "97",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "55",
+    "id" : "54",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "16",
@@ -171,7 +171,7 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "135",
     "type" : "owl:Class"
   }, {
     "id" : "37",
@@ -306,7 +306,7 @@
       "undefined" : "Geometry of an element.Use https://w3id.org/fog# for Geometry Formats."
     },
     "attributes" : [ "external" ],
-    "id" : "53"
+    "id" : "55"
   }, {
     "iri" : "http://w3id.org/ioc#Schedule",
     "baseIri" : "http://w3id.org/ioc",
@@ -415,6 +415,19 @@
     "id" : "33",
     "superClasses" : [ "19" ]
   }, {
+    "iri" : "http://w3id.org/ioc#Information",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Information",
+      "undefined" : "Information"
+    },
+    "comment" : {
+      "undefined" : "http://w3id.org/ioc#"
+    },
+    "id" : "8",
+    "superClasses" : [ "35" ]
+  }, {
     "iri" : "http://www.w3.org/2006/vcard/ns#Vcard",
     "baseIri" : "http://www.w3.org/2006/vcard/ns",
     "instances" : 0,
@@ -436,19 +449,6 @@
     "attributes" : [ "external" ],
     "id" : "67",
     "superClasses" : [ "68" ]
-  }, {
-    "iri" : "http://w3id.org/ioc#Information",
-    "baseIri" : "http://w3id.org/ioc",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Information",
-      "undefined" : "Information"
-    },
-    "comment" : {
-      "undefined" : "Structured Process Data. This class is meant to be a loose connection to other files and information containers."
-    },
-    "id" : "8",
-    "superClasses" : [ "35" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -520,24 +520,6 @@
     "id" : "5",
     "superClasses" : [ "35" ]
   }, {
-    "iri" : "http://w3id.org/ioc#ProcessData",
-    "baseIri" : "http://w3id.org/ioc",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ProcessData",
-      "undefined" : "http://w3id.org/ProcessData"
-    },
-    "subClasses" : [ "31", "10", "8", "16", "6", "68", "25", "5", "12" ],
-    "id" : "35"
-  }, {
     "iri" : "http://w3id.org/ioc#Space",
     "baseIri" : "http://w3id.org/ioc",
     "instances" : 0,
@@ -559,6 +541,24 @@
     },
     "id" : "10",
     "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://w3id.org/ioc#ProcessData",
+    "baseIri" : "http://w3id.org/ioc",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProcessData",
+      "undefined" : "http://w3id.org/ProcessData"
+    },
+    "subClasses" : [ "31", "10", "8", "16", "6", "68", "25", "5", "12" ],
+    "id" : "35"
   }, {
     "iri" : "http://w3id.org/ioc#Actor",
     "baseIri" : "http://w3id.org/ioc",
@@ -619,14 +619,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "96",
+    "id" : "97",
     "label" : {
       "IRI-based" : "dateTime"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "55",
+    "id" : "54",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -646,7 +646,7 @@
       "IRI-based" : "Method",
       "undefined" : "Method"
     },
-    "subClasses" : [ "136" ],
+    "subClasses" : [ "135" ],
     "comment" : {
       "undefined" : "The Method that is used to perform the process described. Used as Interface to mor specific domain ontologies."
     },
@@ -714,7 +714,7 @@
       "undefined" : "CTO task method that is used in (L2) and (L3)"
     },
     "attributes" : [ "external" ],
-    "id" : "136",
+    "id" : "135",
     "superClasses" : [ "16" ]
   }, {
     "iri" : "https://w3id.org/bot#Element",
@@ -843,7 +843,7 @@
     "id" : "52",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "54",
+    "id" : "53",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "56",
@@ -933,7 +933,7 @@
     "id" : "95",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "97",
+    "id" : "96",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "98",
@@ -987,10 +987,10 @@
     "id" : "114",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "3",
+    "id" : "115",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "121",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
     "id" : "122",
@@ -1011,10 +1011,10 @@
     "id" : "127",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "117",
+    "id" : "118",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "118",
+    "id" : "119",
     "type" : "owl:objectProperty"
   }, {
     "id" : "49",
@@ -1035,13 +1035,13 @@
     "id" : "134",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "120",
+    "id" : "121",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "116",
+    "id" : "117",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "135",
+    "id" : "136",
     "type" : "owl:objectProperty"
   }, {
     "id" : "137",
@@ -1065,7 +1065,7 @@
     "id" : "143",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "119",
+    "id" : "120",
     "type" : "owl:objectProperty"
   }, {
     "id" : "144",
@@ -1086,7 +1086,7 @@
     "id" : "132",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "115",
+    "id" : "116",
     "type" : "owl:objectProperty"
   }, {
     "id" : "148",
@@ -1124,7 +1124,7 @@
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "4"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputInformationValue",
@@ -1170,7 +1170,7 @@
     "comment" : {
       "undefined" : "object property to link a specific version of an inistial space to the class describing its exact value"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "9"
   }, {
     "iri" : "http://w3id.org/ioc#isCancelled",
@@ -1197,12 +1197,12 @@
   }, {
     "range" : "12",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "10",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
     "iri" : "http://w3id.org/ioc#hasSchedule",
@@ -1230,17 +1230,17 @@
   }, {
     "range" : "12",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "10",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "range" : "6",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityRequirementValue",
@@ -1268,7 +1268,7 @@
   }, {
     "range" : "5",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "26"
   }, {
     "iri" : "http://w3id.org/ioc#isStarted",
@@ -1295,22 +1295,22 @@
   }, {
     "range" : "16",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "12",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "6",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
     "range" : "5",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "iri" : "http://w3id.org/ioc#isvalid",
@@ -1468,22 +1468,22 @@
     "comment" : {
       "undefined" : "Child process of a process. A process can have a undeifned number of children"
     },
-    "attributes" : [ "object", "transitive", "inverse functional", "asymmetric" ],
+    "attributes" : [ "transitive", "object", "inverse functional", "asymmetric" ],
     "id" : "48"
   }, {
     "range" : "6",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
     "range" : "5",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generatedAtTime",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "55",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1501,46 +1501,46 @@
       "undefined" : "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."
     },
     "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "54"
+    "id" : "53"
   }, {
     "range" : "10",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "56"
   }, {
     "range" : "12",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "57"
   }, {
     "range" : "10",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "16",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "60"
   }, {
     "range" : "8",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "16",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "62"
   }, {
     "range" : "6",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "range" : "5",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
     "iri" : "http://w3id.org/ioc#hasInputInformation",
@@ -1591,7 +1591,7 @@
   }, {
     "iri" : "https://w3id.org/omg#hasGeometry",
     "baseIri" : "https://w3id.org/omg",
-    "range" : "53",
+    "range" : "55",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1631,12 +1631,12 @@
     "comment" : {
       "undefined" : "Property to add a isingle instance to a version of an output space, thus defining the transformed location or space of the process"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "78"
   }, {
     "range" : "77",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "79"
   }, {
     "iri" : "http://w3id.org/ioc#hasScheduleValue",
@@ -1659,12 +1659,12 @@
     "comment" : {
       "undefined" : "Object property to connect a version of a detailed and organized plan that outlines the sequence and timing of tasks, activities, and events required to complete a specific proces to a instanciated Schedule"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "80"
   }, {
     "range" : "77",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
     "iri" : "http://w3id.org/ioc#hasResource",
@@ -1715,7 +1715,7 @@
   }, {
     "range" : "58",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "84"
   }, {
     "iri" : "http://w3id.org/ioc#hasInternalProcessMark",
@@ -1742,37 +1742,37 @@
   }, {
     "range" : "36",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "range" : "12",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "87"
   }, {
     "range" : "37",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "88"
   }, {
     "range" : "37",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "89"
   }, {
     "range" : "12",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
     "range" : "10",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "91"
   }, {
     "range" : "12",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "92"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapability",
@@ -1799,30 +1799,8 @@
   }, {
     "range" : "10",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "94"
-  }, {
-    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
-    "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "96",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "startedAtTime",
-      "undefined" : "startedAtTime"
-    },
-    "domain" : "6",
-    "comment" : {
-      "undefined" : "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
-    },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "95"
   }, {
     "iri" : "http://w3id.org/ioc#isPaused",
     "baseIri" : "http://w3id.org/ioc",
@@ -1844,31 +1822,53 @@
       "undefined" : "A boolean that describes if the process is canceled."
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "97"
+    "id" : "95"
   }, {
-    "range" : "10",
-    "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "97",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startedAtTime",
+      "undefined" : "startedAtTime"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger."
+    },
+    "attributes" : [ "functional", "datatype", "external" ],
+    "id" : "96"
+  }, {
+    "range" : "35",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "98"
   }, {
-    "range" : "10",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "35",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "99"
   }, {
     "range" : "68",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "100"
-  }, {
-    "range" : "10",
-    "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "101"
   }, {
     "range" : "35",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "35",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "102"
   }, {
     "iri" : "http://w3id.org/ioc#hasInitialSpace",
@@ -2031,52 +2031,29 @@
     "id" : "109"
   }, {
     "range" : "35",
-    "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "110"
   }, {
     "range" : "35",
-    "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "111"
   }, {
     "range" : "35",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "112"
   }, {
-    "range" : "35",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "10",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "113"
   }, {
     "range" : "35",
-    "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "114"
-  }, {
-    "iri" : "http://w3id.org/ioc#hasValue",
-    "baseIri" : "http://w3id.org/ioc",
-    "range" : "35",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://w3id.org/ioc#",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasValue",
-      "undefined" : "hasValue"
-    },
-    "domain" : "1",
-    "subproperty" : [ "0", "80", "7", "9", "115", "41", "116", "117", "118", "106", "119", "107", "83", "24", "120", "78" ],
-    "comment" : {
-      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
-    },
-    "attributes" : [ "object", "functional" ],
-    "id" : "3"
   }, {
     "iri" : "http://w3id.org/ioc#hasSuccessor",
     "baseIri" : "http://w3id.org/ioc",
@@ -2097,27 +2074,50 @@
     "comment" : {
       "undefined" : "Logical Successor of a process. The process must be  finished for the sucessor to be ready."
     },
-    "attributes" : [ "object", "transitive", "asymmetric" ],
-    "id" : "121"
+    "attributes" : [ "transitive", "object", "asymmetric" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://w3id.org/ioc#hasValue",
+    "baseIri" : "http://w3id.org/ioc",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://w3id.org/ioc#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "hasValue"
+    },
+    "domain" : "1",
+    "subproperty" : [ "0", "80", "7", "9", "116", "41", "117", "118", "119", "106", "120", "107", "83", "24", "121", "78" ],
+    "comment" : {
+      "undefined" : "Generic Property to connect ProcessDataStates, which can be versioned, to the actual classes that describe ProcessData."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "3"
   }, {
     "range" : "35",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "122"
   }, {
     "range" : "1",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "123"
   }, {
     "range" : "31",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "124"
   }, {
-    "range" : "35",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "10",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "125"
   }, {
     "iri" : "http://w3id.org/ioc#hasElement",
@@ -2142,9 +2142,9 @@
     "attributes" : [ "object", "asymmetric" ],
     "id" : "126"
   }, {
-    "range" : "35",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "10",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "127"
   }, {
     "iri" : "http://w3id.org/ioc#hasResourceValue",
@@ -2168,7 +2168,7 @@
       "undefined" : "Object property to link a  version of a resource, which is defined as pysical or tangible item, material, equipment or asset that is necessary for the successful execution of a construction process, to instanciated class"
     },
     "attributes" : [ "object" ],
-    "id" : "117"
+    "id" : "118"
   }, {
     "iri" : "http://w3id.org/ioc#hasActorValue",
     "baseIri" : "http://w3id.org/ioc",
@@ -2190,8 +2190,8 @@
     "comment" : {
       "undefined" : "object property to link a specific version of an actor links to the process actor."
     },
-    "attributes" : [ "object", "functional" ],
-    "id" : "118"
+    "attributes" : [ "functional", "object" ],
+    "id" : "119"
   }, {
     "iri" : "http://w3id.org/ioc#hasParent",
     "baseIri" : "http://w3id.org/ioc",
@@ -2212,17 +2212,17 @@
     "comment" : {
       "undefined" : "Parent of a Process. A Process can at most have one parent."
     },
-    "attributes" : [ "object", "transitive", "functional", "asymmetric" ],
+    "attributes" : [ "transitive", "functional", "object", "asymmetric" ],
     "id" : "49"
   }, {
     "range" : "31",
     "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "128"
   }, {
     "range" : "19",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "129"
   }, {
     "iri" : "http://w3id.org/ioc#hasProcessDataState",
@@ -2250,7 +2250,7 @@
   }, {
     "range" : "31",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "133"
   }, {
     "iri" : "http://w3id.org/ioc#isReady",
@@ -2295,8 +2295,8 @@
     "comment" : {
       "undefined" : "Object property to connect a version of a condition or state of the process to a single, instanciated status. It is descirbed with a combination of bools."
     },
-    "attributes" : [ "object", "functional" ],
-    "id" : "120"
+    "attributes" : [ "functional", "object" ],
+    "id" : "121"
   }, {
     "iri" : "http://w3id.org/ioc#hasCapabilityValue",
     "baseIri" : "http://w3id.org/ioc",
@@ -2319,10 +2319,10 @@
       "undefined" : "object property to link a specific version of an capability of a resource  to one or more capabilities"
     },
     "attributes" : [ "object" ],
-    "id" : "116"
+    "id" : "117"
   }, {
     "iri" : "http://w3id.org/ioc#hasPredecessor",
-    "inverse" : "121",
+    "inverse" : "115",
     "baseIri" : "http://w3id.org/ioc",
     "range" : "19",
     "annotations" : {
@@ -2341,42 +2341,42 @@
     "comment" : {
       "undefined" : "Logical Predecessor of a process. Must be finished for the process to be ready."
     },
-    "attributes" : [ "object", "transitive", "asymmetric" ],
-    "id" : "135"
+    "attributes" : [ "transitive", "object", "asymmetric" ],
+    "id" : "136"
   }, {
     "range" : "8",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "range" : "16",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "138"
   }, {
     "range" : "5",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "139"
   }, {
     "range" : "6",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "140"
   }, {
     "range" : "10",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "12",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
     "range" : "31",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "143"
   }, {
     "iri" : "http://w3id.org/ioc#hasMethodValue",
@@ -2400,11 +2400,11 @@
       "undefined" : "object property to link a specific version of a method  to one or more instanciated Methods"
     },
     "attributes" : [ "object" ],
-    "id" : "119"
+    "id" : "120"
   }, {
     "range" : "8",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
     "iri" : "http://w3id.org/ioc#hasTargetSpace",
@@ -2432,12 +2432,12 @@
   }, {
     "range" : "25",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "145"
   }, {
     "range" : "31",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "146"
   }, {
     "iri" : "http://w3id.org/ioc#hasLocation",
@@ -2459,7 +2459,7 @@
     "comment" : {
       "undefined" : "Property to connect a element, resource or spatial zone."
     },
-    "attributes" : [ "object", "functional", "asymmetric" ],
+    "attributes" : [ "functional", "object", "asymmetric" ],
     "id" : "147"
   }, {
     "iri" : "http://w3id.org/ioc#hasOutputElement",
@@ -2506,7 +2506,7 @@
       "undefined" : "object property to link a specific version of a location  to one or more location instances"
     },
     "attributes" : [ "object" ],
-    "id" : "115"
+    "id" : "116"
   }, {
     "iri" : "http://w3id.org/ioc#generatedByActor",
     "baseIri" : "http://w3id.org/ioc",
@@ -2554,8 +2554,8 @@
     "id" : "131"
   }, {
     "range" : "16",
-    "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   } ]
 }
