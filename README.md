@@ -12,10 +12,10 @@ This project is released under the Creative Commons Attribution 2.0 Internationa
 
 ## How to cite
 ```
-@software{null,
+@software{Kirner_20240130,
   author       = {Lukas Kirner, Jyrki Oraskari, Peter Wildemann and Sigrid Brell-Cokcan},
   title        = {{Internet of Construction Process Ontology (ioc) v 0.5}},
-  month        = jan,
+  month        = january,
   year         = 2024,
   publisher    = {Zenodo},
   version      = {0.5},
